@@ -1,0 +1,16 @@
+#headshot img{
+  width: 12%;;
+}
+
+.header{ /* CSS Method for the Header image/headshot */
+  margin-top: 1.5rem;
+}
+
+.header-information{ /* For the introductory info (basic info about myself) */
+  text-align: center;
+}
+
+.header-information a{
+  margin-left: 5%;
+  margin-right: 5%;
+}
