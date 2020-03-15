@@ -1,5 +1,5 @@
 #headshot img{
-  width: 12%;;
+  width: 15%;
 }
 
 .header{ /* CSS Method for the Header image/headshot */
@@ -13,4 +13,5 @@
 .header-information a{
   margin-left: 5%;
   margin-right: 5%;
+  padding-bottom: 5px;
 }
