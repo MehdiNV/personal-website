@@ -1,7 +1,8 @@
 #headshot img{
-  width: 15%;
+  width: 7.8rem;
 }
 
+/* CSS Methods for the Header */
 .header{ /* CSS Method for the Header image/headshot */
   margin-top: 1.5rem;
 }
@@ -16,6 +17,17 @@
   padding-bottom: 5px;
 }
 
+/* CSS Methods for the 'Experience' section */
+.row img{
+  width: 3rem;
+  max-width: 3rem;
+}
+.row{
+  text-align: center;
+}
+
+
+/* CSS Methods for the Footer */
 .footer{
   text-align: center;
 }
