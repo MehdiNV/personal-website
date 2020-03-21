@@ -5,7 +5,7 @@ The aim of this website is to be minimalistic but at the same time showcase my p
 
 Technologies being used:
 HTML
-CSS
+CSS (with HoverCSS and animateCSS included)
 Bootstrap
 Git
 JQuery (to support Boostrap)
