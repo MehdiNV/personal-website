@@ -10,3 +10,5 @@ Bootstrap
 Git
 JQuery (to support Boostrap)
 Heroku (TBC)
+
+Copyright © Mehdi Naderi Varandi 2020. All rights reserved
