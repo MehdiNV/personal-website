@@ -8,7 +8,7 @@ HTML
 CSS (with HoverCSS and animateCSS included)
 Bootstrap
 Git
-JQuery (to support Boostrap)
+JQuery (to support Bootstrap)
 Heroku (TBC)
 
 Copyright © Mehdi Naderi Varandi 2020. All rights reserved
