@@ -6,7 +6,7 @@ A personal website to showcase my personal, technical and other related achievem
 The aim of this website is to be minimalistic but at the same time showcase my personal and technical achievements on top of hobbies I partake in.
 
 ### Technologies:
-Technologies being used:
+Technologies being used
 HTML
 CSS (with HoverCSS and animateCSS included)
 Bootstrap
