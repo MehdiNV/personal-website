@@ -1,11 +1,11 @@
 # personal-website
 
-#### Introduction
+### Introduction
 A personal website to showcase my personal, technical and other related achievements
 
 The aim of this website is to be minimalistic but at the same time showcase my personal and technical achievements on top of hobbies I partake in.
 
-#### Technologies:
+### Technologies:
 Technologies being used:
 HTML
 CSS (with HoverCSS and animateCSS included)
@@ -14,8 +14,8 @@ Git
 JQuery (to support Bootstrap)
 Heroku (TBC)
 
-#### Credit
+### Credit
 Mehdi Naderi Varandi
 
-#### Copyright
+### Copyright
 Copyright © Mehdi Naderi Varandi 2020. All rights reserved
