@@ -14,20 +14,20 @@ const ProfileHeader = () => {
       <Jumbotron fluid>
         <Container>
 
-        <Image src="../assets/headshot1Croatia.jpg" rounded />
+        <Image id ="image" src={require("../images/headshot1Croatia.jpg")} roundedCircle />
 
         <h3>Mehdi Naderi Varandi</h3>
         <h5>Software Engineering Intern @ WonderBill </h5>
         <a href="https://www.linkedin.com/in/mehdinv/" class="hvr-underline-from-left" target="_blank">
-          <FiLinkedin />
+          <FiLinkedin class = "icons" />
         </a>
 
         <a href="https://github.com/MehdiNV" class="hvr-underline-from-left" target="_blank">
-          <FiGithub />
+          <FiGithub class = "icons"/>
         </a>
 
         <a href="mailto:mehdinv@hotmail.com" class="hvr-underline-from-left" target="_blank">
-          <FiMail />
+          <FiMail class = "icons"/>
         </a>
 
         <hr />
