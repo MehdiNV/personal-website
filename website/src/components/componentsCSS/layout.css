@@ -1,0 +1,13 @@
+footer {
+  padding-top: 0.8%;
+  text-align: center;
+}
+footer span{
+  font-size: 1.3rem;
+  vertical-align: middle;
+}
+
+footer span svg{
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+}

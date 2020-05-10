@@ -12,6 +12,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./componentsCSS/layout.css"
 
+import { RiGatsbyLine, RiReactjsLine, RiHeartLine } from "react-icons/ri";
+import { GrGraphQl, GrHeroku } from "react-icons/gr";
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -32,9 +35,15 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <h4> © {new Date().getFullYear()}. Made with
+            <span>
+              <RiGatsbyLine />
+              <RiReactjsLine />
+              <GrGraphQl />
+              <GrHeroku />
+              <RiHeartLine />
+            </span>
+          </h4>
         </footer>
       </div>
     </>
