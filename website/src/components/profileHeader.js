@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 import React from "react"
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
-import Image from 'react-bootstrap/Image'
 import { FiGithub,  FiLinkedin, FiMail} from "react-icons/fi";
 import './componentsCSS/profileHeader.css'
+import HeadshotImage from './headshotImage'
 
 const ProfileHeader = () => {
 
@@ -14,7 +14,7 @@ const ProfileHeader = () => {
       <Jumbotron fluid>
         <Container>
         <div>
-          <Image id ="image" src={require("../images/headshot1Croatia.jpg")} roundedCircle />
+          <HeadshotImage />
 
           <h3>Mehdi Naderi Varandi</h3>
           <h5>Software Engineering Intern @ WonderBill </h5>
