@@ -14,7 +14,7 @@ const ProfileHeader = () => {
       <Jumbotron fluid>
         <Container>
         <div>
-          <HeadshotImage />
+          <HeadshotImage id = "image"/>
 
           <h3>Mehdi Naderi Varandi</h3>
           <h5>Software Engineering Intern @ WonderBill </h5>
@@ -30,7 +30,7 @@ const ProfileHeader = () => {
             <FiMail class = "icons"/>
           </a>
 
-          <hr />
+          <hr class="hrStyle" />
         </div>
         </Container>
       </Jumbotron>
