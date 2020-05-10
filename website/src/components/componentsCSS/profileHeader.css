@@ -1,12 +1,26 @@
-h3 {
-  font-family: "Helvetica";
+h1, h2, h3, h4, h5, h6 {
+  font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial,"Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  color: #212529;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+#nameHeader {
+  font-size: 1.6rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+#subtitleHeader{
+  font-size: 1.21rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
 }
 
-#image{
-  width: 7.8rem;
-}
-
-div {
+#profileHeader {
   text-align: center;
 }
 
@@ -29,8 +43,8 @@ div {
   overflow: hidden;
 
   /* Includes margin spacing for the icons */
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 4rem;
+  margin-right: 4rem;
   text-align: center;
   font-size: 1.45rem;
   color: black;
@@ -56,7 +70,3 @@ div {
   right: 0;
 }
 /* End of Hover Underline */
-
-
-.icons{
-}

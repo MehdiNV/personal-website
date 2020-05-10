@@ -7,7 +7,7 @@ const HeadshotImage = ({imageName}) => {
     query {
       file(relativePath: { eq: "headshot1Croatia.jpg" }) {
         childImageSharp {
-          fixed (width: 140){
+          fixed (width: 140, quality: 100){
             ...GatsbyImageSharpFixed
           }
         }

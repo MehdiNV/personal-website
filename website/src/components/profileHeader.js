@@ -7,17 +7,23 @@ import { FiGithub,  FiLinkedin, FiMail} from "react-icons/fi";
 import './componentsCSS/profileHeader.css'
 import HeadshotImage from './headshotImage'
 
+// Profile Header Section
+// This contains basically the top-most part of the website, including...
+// a) The Headshot image (from headshotImage/gatsby-image component)
+// b) Titles / subtitle (name, current role, etc)
+// c) Links to other websites (e.g. GitHub, LinkedIn, and so on)
 const ProfileHeader = () => {
 
   return (
     <>
       <Jumbotron fluid>
         <Container>
-        <div>
+        <div id = "profileHeader">
           <HeadshotImage id = "image"/>
+          <hr class="hrStyle" />
 
-          <h3>Mehdi Naderi Varandi</h3>
-          <h5>Software Engineering Intern @ WonderBill </h5>
+          <h2 id = "nameHeader">Mehdi Naderi Varandi</h2>
+          <h3 id = "subtitleHeader">Software Engineering Intern @ WonderBill </h3>
           <a href="https://www.linkedin.com/in/mehdinv/" class="hvr-underline-from-left" target="_blank">
             <FiLinkedin class = "icons" />
           </a>
