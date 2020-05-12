@@ -17,11 +17,12 @@
   min-width: 260px;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 660px) {
   .aboutSection {
     flex-wrap: wrap;
   }
   .aboutSection #aboutContent {
     width: 100%;
+    min-width: 100%;
   }
 }
