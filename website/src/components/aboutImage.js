@@ -7,8 +7,8 @@ const AboutImage = ({imageName}) => {
     query {
       file(relativePath: { eq: "versionControl.png" }) {
         childImageSharp {
-          fixed (width: 500, quality: 100){
-            ...GatsbyImageSharpFixed
+          fluid (quality: 100){
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -16,7 +16,7 @@ const AboutImage = ({imageName}) => {
   `)
 
   return <Img
-    fixed={data.file.childImageSharp.fixed}
+    fluid={data.file.childImageSharp.fluid}
     alt="About Image from unDraw"
   />
 }
