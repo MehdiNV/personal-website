@@ -6,6 +6,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import ProfileHeader from '../components/profileHeader'
 import ContentSection from '../components/ContentSection'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const IndexPage = () => (
   <Layout>

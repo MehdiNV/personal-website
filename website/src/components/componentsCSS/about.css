@@ -26,3 +26,20 @@
     min-width: 100%;
   }
 }
+
+/* Skills Section */
+#languages {
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  width: 99%;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  margin-bottom: 1vh;
+  padding-bottom: 0.4vh;
+}
+
+#languages * {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
