@@ -5,11 +5,11 @@ import './componentsCSS/sectionLayout.css'
 const SectionLayout = ({ sectionTitle }) => {
   return (
     <>
-      <h3> {sectionTitle}
+      <h4> {sectionTitle}
         <span id = "headingIcon">
           <FiChevronRight />
         </span>
-      </h3>
+      </h4>
     </>
   )
 }

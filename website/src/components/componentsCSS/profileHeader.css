@@ -9,6 +9,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-bottom: 1.5rem;
 }
+
+#profileHeader {
+  margin-top: 1vh;
+  text-align: center;
+  width: 100%;
+}
+
 #nameHeader {
   font-size: 1.6rem;
   margin-top: 0.8rem;
@@ -18,10 +25,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.21rem;
   margin-top: 0.7rem;
   margin-bottom: 1.5rem;
-}
-
-#profileHeader {
-  text-align: center;
 }
 
 /* Styling for the hr tag */

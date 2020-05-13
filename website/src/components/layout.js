@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
     <>
       <div
         style={{
-          padding: `0 1.0875rem 1.45rem`,
+          padding: `0 0 1.45rem`,
         }}
       >
         <main>{children}</main>
