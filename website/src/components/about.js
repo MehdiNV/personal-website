@@ -6,6 +6,7 @@ import AboutImage from './aboutImage'
 import Image from 'react-bootstrap/Image'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
+import Badge from 'react-bootstrap/Badge'
 
 // About Section should have:
 // a) A 'About' description (left side)
@@ -18,10 +19,11 @@ const About = () => {
       <Container>
         <div class = "aboutSection">
           <div id = "aboutContent">
-            <p>
-              This is a modified jumbotron that occupies the entire horizontal space of
-              its parent.
-            </p>
+            <h2> Hi there! </h2>
+            <p>I'm Mehdi, a Computer Science undergraduate at Newcastle University. Take a look at my skills below!</p>
+            <Badge pill variant="primary">React</Badge>
+            <Badge variant="secondary">React Native</Badge>
+
           </div>
 
           <div id = "aboutImage">
