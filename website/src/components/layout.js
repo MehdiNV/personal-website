@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          <h4> © {new Date().getFullYear()}. Made with
+          <h6> © {new Date().getFullYear()}. Made with
             <span>
               <RiGatsbyLine />
               <RiReactjsLine />
@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
               <GrHeroku />
               <RiHeartLine />
             </span>
-          </h4>
+          </h6>
         </footer>
       </div>
     </>

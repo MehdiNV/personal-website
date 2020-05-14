@@ -4,7 +4,9 @@ footer {
 }
 footer span{
   font-size: 1.3rem;
-  vertical-align: middle;
+}
+footer h6{
+  font-size: 1.15rem;
 }
 
 footer span svg{
