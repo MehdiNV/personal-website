@@ -32,7 +32,7 @@
 }
 
 /* Skills Section */
-#languages {
+.skillSegment {
   border: 2px solid black;
   display: flex;
   align-items: center;
@@ -43,11 +43,11 @@
   padding-bottom: 0.4vh;
 }
 
-#languages * {
+.skillSegment * {
   margin-left: 1%;
   margin-right: 1%;
 }
 
-#languages .badges{
-  color: #c060a1;
+.skillSegment .badge{
+  background-color: #c060a1;
 }

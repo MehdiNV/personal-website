@@ -19,40 +19,45 @@ const About = () => {
         <div class = "aboutSection">
           <div id = "aboutContent">
             <h3> Hi there! </h3>
-            <p>I'm Mehdi, a Computer Science undergraduate at Newcastle University. Take a look at my skills below!</p>
+            <p>I'm Mehdi, a Computer Science undergraduate at Newcastle University. At the moment, I'm
+              working as a Software Engineering Intern at WonderBill! 
 
-            <div id = "languages">
+              Outside of programming, I can usually be found fencing, teaching or debating.
+            </p>
+            <p>Take a look at my skills below!</p>
+
+            <div class = "skillSegment">
               <h6>Languages:</h6>
-              <Badge class = "badges" variant="primary">JavaScript</Badge>
-              <Badge class = "badges" variant="primary">Python</Badge>
-              <Badge class = "badges" variant="primary">Java</Badge>
-              <Badge class = "badges" variant="primary">Typescript</Badge>
-              <Badge class = "badges" variant="primary">HTML</Badge>
-              <Badge class = "badges" variant="primary">CSS</Badge>
-              <Badge class = "badges" variant="primary">VBA</Badge>
-              <Badge class = "badges" variant="primary">C</Badge>
+              <Badge variant="primary">JavaScript</Badge>
+              <Badge variant="primary">Python</Badge>
+              <Badge variant="primary">Java</Badge>
+              <Badge variant="primary">Typescript</Badge>
+              <Badge variant="primary">HTML</Badge>
+              <Badge variant="primary">CSS</Badge>
+              <Badge variant="primary">VBA</Badge>
+              <Badge variant="primary">C</Badge>
             </div>
 
-            <div id = "languages">
+            <div class = "skillSegment">
               <h6>Frameworks:</h6>
-              <Badge class = "badges" variant="primary">React</Badge>
-              <Badge class = "badges" variant="primary">React Native</Badge>
-              <Badge class = "badges" variant="primary">Bootstrap</Badge>
-              <Badge class = "badges" variant="primary">Gatsby</Badge>
-              <Badge class = "badges" variant="primary">Node</Badge>
-              <Badge class = "badges" variant="primary">Firebase</Badge>
+              <Badge variant="primary">React</Badge>
+              <Badge variant="primary">React Native</Badge>
+              <Badge variant="primary">Bootstrap</Badge>
+              <Badge variant="primary">Gatsby</Badge>
+              <Badge variant="primary">Node</Badge>
+              <Badge variant="primary">Firebase</Badge>
             </div>
 
-            <div id = "languages">
+            <div class = "skillSegment">
               <h6>Tools:</h6>
-              <Badge class = "badges" variant="primary">Git</Badge>
-              <Badge class = "badges" variant="primary">Bash</Badge>
-              <Badge class = "badges" variant="primary">MongoDB</Badge>
-              <Badge class = "badges" variant="primary">Postico</Badge>
-              <Badge class = "badges" variant="primary">Postman</Badge>
-              <Badge class = "badges" variant="primary">NPM</Badge>
-              <Badge class = "badges" variant="primary">GraphQL</Badge>
-              <Badge class = "badges" variant="primary">Heroku</Badge>
+              <Badge variant="primary">Git</Badge>
+              <Badge variant="primary">Bash</Badge>
+              <Badge variant="primary">MongoDB</Badge>
+              <Badge variant="primary">Postico</Badge>
+              <Badge variant="primary">Postman</Badge>
+              <Badge variant="primary">NPM</Badge>
+              <Badge variant="primary">GraphQL</Badge>
+              <Badge variant="primary">Heroku</Badge>
             </div>
 
 
