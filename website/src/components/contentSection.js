@@ -3,6 +3,7 @@ import { FiChevronRight} from "react-icons/fi";
 import SectionLayout from './sectionLayout'
 import './componentsCSS/contentSection.css'
 import About from './about'
+import Experiences from './experiences'
 
 // A section should have:
 // Heading (e.g. About)
@@ -15,6 +16,7 @@ const ContentSection = () => {
       <SectionLayout sectionTitle = "About" />
       <About />
       <SectionLayout sectionTitle = "Experiences" />
+      <Experiences />
     </div>
   )
 }
