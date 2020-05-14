@@ -1,0 +1,32 @@
+.experienceSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border: 1px solid black;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+
+.experienceSection #experiencesContent {
+  flex: 1 1 0%;
+  text-align: center;
+}
+
+.experienceSection #experiencesImage {
+  flex: 1 1 0%;
+  max-width: 720px;
+  min-width: 260px;
+}
+
+@media only screen and (max-width: 660px) {
+  .experienceSection {
+    flex-wrap: wrap;
+  }
+  .aboutSection #experiencesContent {
+    width: 100%;
+    min-width: 100%;
+  }
+}
