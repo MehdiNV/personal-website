@@ -18,10 +18,10 @@
 .experienceSection #experiencesImage {
   flex: 1 1 0%;
   max-width: 720px;
-  min-width: 260px;
+  min-width: 300px;
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 600px) {
   .experienceSection {
     flex-wrap: wrap;
   }
@@ -29,4 +29,29 @@
     width: 100%;
     min-width: 100%;
   }
+}
+
+/* CSS Modifications for the Accordion Cards */
+#experiencesContent .accordion .card{
+  margin-bottom: 0.5rem;
+  border: 0.5px solid black;
+  text-align: left;
+}
+
+#experiencesContent .accordion .accordionBody  {
+  /* For the card body itself (containing company title and role) */
+  background-color: #f8f3eb;
+}
+
+#experiencesContent .accordion .accordionBody p{
+  /* For the text inside the card body */
+  margin-top: 0.2rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#experiencesContent .accordion .companyTitle  {
+  /* Text modifications for the company title */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }

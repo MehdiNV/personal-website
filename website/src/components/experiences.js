@@ -15,8 +15,8 @@ const Experiences = () => {
 
           <div id = "experiencesContent">
             <Accordion>
-              <Card>
-                <Accordion.Toggle as={Card.Header} eventKey="0">
+              <Card >
+                <Accordion.Toggle as={Card.Header} eventKey="0" class = "accordionBody">
                   <p class="companyTitle">WonderBill</p>
                   <p>Software Engineering Intern</p>
                 </Accordion.Toggle>
@@ -26,7 +26,7 @@ const Experiences = () => {
               </Card>
 
               <Card>
-                <Accordion.Toggle as={Card.Header} eventKey="1">
+                <Accordion.Toggle as={Card.Header} eventKey="1" class = "accordionBody">
                   <p class="companyTitle">Visa</p>
                   <p>Software Engineering Intern</p>
                 </Accordion.Toggle>
@@ -36,7 +36,7 @@ const Experiences = () => {
               </Card>
 
               <Card>
-                <Accordion.Toggle as={Card.Header} eventKey="2">
+                <Accordion.Toggle as={Card.Header} eventKey="2" class = "accordionBody">
                   <p class="companyTitle">Shearman & Sterling LLP</p>
                   <p>Knowledge Management Summer Intern</p>
                 </Accordion.Toggle>
@@ -46,7 +46,7 @@ const Experiences = () => {
               </Card>
 
               <Card>
-                <Accordion.Toggle as={Card.Header} eventKey="3">
+                <Accordion.Toggle as={Card.Header} eventKey="3" class = "accordionBody">
                   <p class="companyTitle">BBC</p>
                   <p>Computer Science Mentor (Contract role)</p>
                 </Accordion.Toggle>
