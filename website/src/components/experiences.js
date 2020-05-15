@@ -1,6 +1,9 @@
 import React from "react"
 import ExperiencesImage from './ExperiencesImage'
 import './componentsCSS/experiences.css'
+import Accordion from 'react-bootstrap/Accordion'
+import ListGroup from 'react-bootstrap/ListGroup'
+import Card from 'react-bootstrap/Card'
 
 const Experiences = () => {
   return (
@@ -11,7 +14,38 @@ const Experiences = () => {
           </div>
 
           <div id = "experiencesContent">
+            <Accordion>
+              <Card>
+                <Accordion.Toggle as={Card.Header} eventKey="0">
+                  <p class="companyTitle">WonderBill</p>
+                  <p>Software Engineering Intern</p>
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="0">
+                  <Card.Body>Hello! I'm the body</Card.Body>
+                </Accordion.Collapse>
+              </Card>
 
+              <Card>
+                <Accordion.Toggle as={Card.Header} eventKey="1">
+                  <p class="companyTitle">Visa</p>
+                  <p>Software Engineering Intern</p>
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="1">
+                  <Card.Body>Hello! I'm another body</Card.Body>
+                </Accordion.Collapse>
+              </Card>
+
+              <Card>
+                <Accordion.Toggle as={Card.Header} eventKey="2">
+                  <p class="companyTitle">Visa</p>
+                  <p>Software Engineering Intern</p>
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="1">
+                  <Card.Body>Hello! I'm another body</Card.Body>
+                </Accordion.Collapse>
+              </Card>
+
+            </Accordion>
           </div>
 
 
