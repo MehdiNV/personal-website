@@ -17,7 +17,11 @@ const Experiences = () => {
             <Accordion>
               <Card >
                 <Accordion.Toggle as={Card.Header} eventKey="0" class = "accordionBody">
-                  <p class="companyTitle">WonderBill</p>
+                  <div class = "companyAndDate">
+                    <p class="companyTitle">WonderBill</p>
+                    <p class="roleDate">Sep 2019 - Present</p>
+                  </div>
+
                   <p>Software Engineering Intern</p>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
@@ -27,7 +31,11 @@ const Experiences = () => {
 
               <Card>
                 <Accordion.Toggle as={Card.Header} eventKey="1" class = "accordionBody">
-                  <p class="companyTitle">Visa</p>
+                  <div class = "companyAndDate">
+                    <p class="companyTitle">Visa</p>
+                    <p class="roleDate">Jun - Aug 2019</p>
+                  </div>
+
                   <p>Software Engineering Intern</p>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="1">
@@ -37,7 +45,11 @@ const Experiences = () => {
 
               <Card>
                 <Accordion.Toggle as={Card.Header} eventKey="2" class = "accordionBody">
-                  <p class="companyTitle">Shearman & Sterling LLP</p>
+                  <div class = "companyAndDate">
+                    <p class="companyTitle">Shearman & Sterling LLP</p>
+                    <p class="roleDate">Jul - Jul 2018</p>
+                  </div>
+
                   <p>Knowledge Management Summer Intern</p>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="2">
@@ -47,7 +59,11 @@ const Experiences = () => {
 
               <Card>
                 <Accordion.Toggle as={Card.Header} eventKey="3" class = "accordionBody">
-                  <p class="companyTitle">BBC</p>
+                  <div class = "companyAndDate">
+                    <p class="companyTitle">BBC</p>
+                    <p class="roleDate">Jan - May 2018</p>
+                  </div>
+
                   <p>Computer Science Mentor (Contract role)</p>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="3">
