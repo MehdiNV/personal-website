@@ -45,6 +45,26 @@ const Experiences = () => {
                 </Accordion.Collapse>
               </Card>
 
+              <Card>
+                <Accordion.Toggle as={Card.Header} eventKey="2">
+                  <p class="companyTitle">Shearman & Sterling LLP</p>
+                  <p>Knowledge Management Summer Intern</p>
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="1">
+                  <Card.Body>Hello! I'm another body</Card.Body>
+                </Accordion.Collapse>
+              </Card>
+
+              <Card>
+                <Accordion.Toggle as={Card.Header} eventKey="2">
+                  <p class="companyTitle">BBC</p>
+                  <p>Computer Science Mentor (Contract role)</p>
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="1">
+                  <Card.Body>Hello! I'm another body</Card.Body>
+                </Accordion.Collapse>
+              </Card>
+
             </Accordion>
           </div>
 
