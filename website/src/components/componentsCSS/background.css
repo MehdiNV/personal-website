@@ -43,4 +43,11 @@
 
 .backgroundSection #accolades{
   font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.backgroundSection .accoladesInfo{
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-bottom: 0.2rem;
 }

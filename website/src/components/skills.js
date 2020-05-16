@@ -23,7 +23,7 @@ const Skills = () => {
 
           <div id = "skillsContent">
 
-            <p>Take a look at my skills below!</p>
+            <p>Take a look at my technical skills below: 💻</p>
 
             <div class = "skillSegment">
               <h6>Languages:</h6>
