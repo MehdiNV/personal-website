@@ -4,6 +4,7 @@ module.exports = {
     description: `Personal website of Mehdi Naderi Varandi`,
     author: `Mehdi Naderi Varandi, made using @gatsbyjs`,
   },
+  pathPrefix: "/personal-website",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
