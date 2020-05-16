@@ -2,10 +2,23 @@ import React from "react"
 import './componentsCSS/contact.css'
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
+import ContactImage from './contactImage'
 
 const Contact = () => {
 
-  return ()
+  return (
+    <>
+      <div class = "contactSection">
+        <div id = "contactImage">
+          <ContactImage />
+        </div>
+
+        <div id = "contactContent">
+          
+        </div>
+      </div>
+    </>
+  )
 
 }
 

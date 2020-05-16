@@ -5,6 +5,7 @@ import './componentsCSS/contentSection.css'
 import About from './about'
 import Experiences from './experiences'
 import Extracurricular from './extracurricular'
+import Contact from './contact'
 
 // A section should have:
 // Heading (e.g. About)
@@ -20,6 +21,8 @@ const ContentSection = () => {
       <Experiences />
       <SectionLayout sectionTitle = "Extracurricular" />
       <Extracurricular />
+      <SectionLayout sectionTitle = "Contact Me" />
+      <Contact />
     </div>
   )
 }

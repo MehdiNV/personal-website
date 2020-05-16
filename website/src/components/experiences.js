@@ -25,7 +25,9 @@ const Experiences = () => {
                   <p>Software Engineering Intern</p>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
-                  <Card.Body>Hello! I'm the body</Card.Body>
+                  <Card.Body>
+                    <p>• Maintaining and refactoring Selenium-based web scrapers as part of a wider initiative with the Project Management team</p>
+                  </Card.Body>
                 </Accordion.Collapse>
               </Card>
 
@@ -39,7 +41,13 @@ const Experiences = () => {
                   <p>Software Engineering Intern</p>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="1">
-                  <Card.Body>Hello! I'm another body</Card.Body>
+                  <Card.Body>
+                    <p>• Developed a new system that visualised testing results, achieving a 350% time decrease to conduct
+                      multiple types of testing methods (white-box, data validation, etc)</p>
+                    <p>• Wrote modules in Java and Vaadin to parse large data files more efficiently, reducing upload times by 30%</p>
+                    <p>• Volunteered with other colleagues in community empowerment initiatives, such as
+                      assisting local schools with errands and teaching regarding careers in Technology to young students </p>
+                  </Card.Body>
                 </Accordion.Collapse>
               </Card>
 
@@ -53,7 +61,13 @@ const Experiences = () => {
                   <p>Knowledge Management Summer Intern</p>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="2">
-                  <Card.Body>Hello! I'm another body</Card.Body>
+                  <Card.Body>
+                    <p>• Streamlined attorney workflow processes by engineering specific VBA macros, achieving up to 30% workload
+                      decrease on resource-intensive tasks - approximately a cost reduction of £200,000 per annum.</p>
+                    <p>• Identified potential infrastructure improvements by consulting with stakeholders and identifying pain points to tackle in the future</p>
+                    <p>• Conducted research with other interns on Big Data, and successfully presented the subject
+                      to various attorneys and business services colleagues </p>
+                  </Card.Body>
                 </Accordion.Collapse>
               </Card>
 
@@ -67,7 +81,12 @@ const Experiences = () => {
                   <p>Computer Science Mentor (Contract role)</p>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="3">
-                  <Card.Body>Hello! I'm another body</Card.Body>
+                  <Card.Body>
+                    <p>• Collaborated with the BBC to deliver Computer Science lessons to 8-13 year old students in my local
+                      community, as part of the CLIMB Micro:bit Initiative</p>
+                    <p>• Taught accelerated intro to JavaScript and Computational Thinking, using Micro:bits, to approximately over 55 students</p>
+                    <p>• Developed the student's Computational Thinking and Programming ability in order to inspire the next generation of coders</p>
+                  </Card.Body>
                 </Accordion.Collapse>
               </Card>
 

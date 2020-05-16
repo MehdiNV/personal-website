@@ -61,6 +61,11 @@
   margin-right: 0.5rem;
 }
 
+#experiencesContent .accordion .card-body p{
+  /* For the p tags / bullet points inside the card bodies */
+  margin-bottom: 0.5rem;
+}
+
 #experiencesContent .accordion .companyTitle  {
   /* Text modifications for the company title */
   font-weight: bold;

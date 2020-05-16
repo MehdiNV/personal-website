@@ -21,7 +21,10 @@ const Extracurricular = () => {
               <p>Coding Instructor</p>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
-              <Card.Body>Hello! I'm the body</Card.Body>
+              <Card.Body>
+                <p>• Teach weekly sessions on Web Development to a class of 15+ students as part of a national effort to encourage more women to pursue software development</p>
+                <p>• Technologies covered are HTML, CSS, Bootstrap, Git, JavaScript, JQuery</p>
+              </Card.Body>
             </Accordion.Collapse>
           </Card>
 
@@ -35,7 +38,9 @@ const Extracurricular = () => {
               <p>Founder</p>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
-              <Card.Body>Hello! I'm another body</Card.Body>
+              <Card.Body>
+                <p>• Implementing a social platform aimed at connecting students to relevant career opportunities, and empowering students regardless of their access to opportunities</p>
+              </Card.Body>
             </Accordion.Collapse>
           </Card>
 
@@ -49,7 +54,11 @@ const Extracurricular = () => {
               <p>Outreach Officer</p>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="2">
-              <Card.Body>Hello! I'm another body</Card.Body>
+              <Card.Body>
+                <p>• Elected as the Outreach Officer of the Computing and Technology Society (NUCATS), the university's largest Technology-oriented society</p>
+                <p>• As the Outreach Officer, I managed teams of university students who were sent into school to teach Computer Science, in order to encourage more interest in the subject. This allowed us to ensure that
+                  all students, regardless of their area’s resources or socioeconomic status, can learn and be inspired. </p>
+              </Card.Body>
             </Accordion.Collapse>
           </Card>
 
@@ -63,7 +72,11 @@ const Extracurricular = () => {
               <p>Competitions Convenor</p>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="3">
-              <Card.Body>Hello! I'm another body</Card.Body>
+              <Card.Body>
+                <p>• Managed international debating competitions that each generated approx. £1000</p>
+                <p>• Automated repetitive tasks by creating tailored Excel workbooks and achieved
+                  a 70% time reduction, freeing up more time and resources for both myself and future successors</p>
+              </Card.Body>
             </Accordion.Collapse>
           </Card>
 

@@ -53,6 +53,10 @@
   padding-bottom: 0.4rem;
 }
 
+#extracurricularContent .accordion .card-body p{
+  /* For the p tags / bullet points inside the card bodies */
+  margin-bottom: 0.5rem;
+}
 
 #extracurricularContent .accordion .accordionBody p{
   /* For the text inside the card body */
