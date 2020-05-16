@@ -9,12 +9,11 @@ const Contact = () => {
   return (
     <>
       <div class = "contactSection">
-        <div id = "contactImage">
-          <ContactImage />
+        <div id = "contactContent">
         </div>
 
-        <div id = "contactContent">
-          
+        <div id = "contactImage">
+          <ContactImage />
         </div>
       </div>
     </>

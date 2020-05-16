@@ -9,10 +9,6 @@ const Experiences = () => {
   return (
       <>
         <div class = "experienceSection">
-          <div id = "experiencesImage">
-            <ExperiencesImage />
-          </div>
-
           <div id = "experiencesContent">
             <Accordion>
               <Card >
@@ -91,6 +87,10 @@ const Experiences = () => {
               </Card>
 
             </Accordion>
+          </div>
+
+          <div id = "experiencesImage">
+            <ExperiencesImage />
           </div>
 
 

@@ -2,7 +2,7 @@ import React from "react"
 import { FiChevronRight} from "react-icons/fi";
 import SectionLayout from './sectionLayout'
 import './componentsCSS/about.css'
-import AboutImage from './aboutImage'
+import SkillsImage from './skillsImage'
 import Image from 'react-bootstrap/Image'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
@@ -17,13 +17,12 @@ const About = () => {
   return (
     <>
         <div class = "aboutSection">
-          <div id = "aboutContent">
-            <h3> Hi there! </h3>
-            <p>I'm Mehdi, a Computer Science undergraduate at Newcastle University. At the moment, I'm
-              working as a Software Engineering Intern at WonderBill! 
+          <div id = "aboutImage">
+            <SkillsImage />
+          </div>
 
-              Outside of programming, I can usually be found fencing, teaching or debating.
-            </p>
+          <div id = "aboutContent">
+
             <p>Take a look at my skills below!</p>
 
             <div class = "skillSegment">
@@ -61,10 +60,6 @@ const About = () => {
             </div>
 
 
-          </div>
-
-          <div id = "aboutImage">
-            <AboutImage />
           </div>
 
         </div>
