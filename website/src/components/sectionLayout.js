@@ -5,7 +5,7 @@ import './componentsCSS/sectionLayout.css'
 const SectionLayout = ({ sectionTitle }) => {
   return (
     <>
-      <h4> {sectionTitle}
+      <h4 id = "sectionHeader"> {sectionTitle}
         <span id = "headingIcon">
           <FiChevronRight />
         </span>
