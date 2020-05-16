@@ -1,5 +1,5 @@
 footer {
-  padding-top: 0.8%;
+  padding-top: 1rem;
   text-align: center;
 }
 footer span{
@@ -12,4 +12,8 @@ footer h6{
 footer span svg{
   margin-left: 0.4rem;
   margin-right: 0.4rem;
+}
+
+#footerName {
+  font-size: 1.05rem;
 }

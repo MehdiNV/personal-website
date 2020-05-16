@@ -35,6 +35,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
+          <h6 id = "footerName">Designed & Developed by Mehdi Naderi Varandi</h6>
           <h6> © {new Date().getFullYear()}. Made with
             <span>
               <RiGatsbyLine />
