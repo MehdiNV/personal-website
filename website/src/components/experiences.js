@@ -1,5 +1,5 @@
 import React from "react"
-import ExperiencesImage from './ExperiencesImage'
+import ExperiencesImage from './experiencesImage'
 import './componentsCSS/experiences.css'
 import Accordion from 'react-bootstrap/Accordion'
 import ListGroup from 'react-bootstrap/ListGroup'

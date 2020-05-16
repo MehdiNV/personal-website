@@ -1,4 +1,4 @@
-.experienceSection {
+.extracurricularSection {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,40 +10,41 @@
   padding-right: 0.5vw;
 }
 
-.experienceSection #experiencesContent {
+.extracurricularSection #extracurricularContent {
   flex: 1 1 0%;
   text-align: center;
 }
 
-.experienceSection #experiencesImage {
+.extracurricularSection #extracurricularImage {
   flex: 1 1 0%;
   max-width: 720px;
   min-width: 300px;
 }
 
-@media only screen and (max-width: 660px) {
-  .experienceSection {
+@media only screen and (max-width: 600px) {
+  .extracurricularSection {
     flex-wrap: wrap;
   }
-  .experienceSection #experiencesContent {
+  .extracurricularSection #extracurricularContent {
     width: 100%;
     min-width: 100%;
   }
 }
 
+
 /* CSS Modifications for the Accordion Cards */
-#experiencesContent .accordion .card{
+#extracurricularContent .accordion .card{
   margin-bottom: 0.5rem;
   border: 0.5px solid black;
   text-align: left;
 }
 
-#experiencesContent .accordion .accordionBody {
+#extracurricularContent .accordion .accordionBody {
   /* For the card body itself (containing company title and role) */
   background-color: #f8f3eb;
 }
 
-#experiencesContent .accordion .card-body {
+#extracurricularContent .accordion .card-body {
   /* For the card's description / nested content side */
   background-color: #f8f3eb;
   border-top: 0.5px solid black;
@@ -53,7 +54,7 @@
 }
 
 
-#experiencesContent .accordion .accordionBody p{
+#extracurricularContent .accordion .accordionBody p{
   /* For the text inside the card body */
   margin-top: 0.2rem;
   margin-left: 0.5rem;
@@ -61,19 +62,19 @@
   margin-right: 0.5rem;
 }
 
-#experiencesContent .accordion .companyTitle  {
+#extracurricularContent .accordion .companyTitle  {
   /* Text modifications for the company title */
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-#experiencesContent .accordion .companyAndDate  {
+#extracurricularContent .accordion .companyAndDate  {
   /* Div containing company title and date */
   display: flex;
   justify-content: space-between;
 }
 
-#experiencesContent .accordion .companyAndDate .roleDate{
+#extracurricularContent .accordion .companyAndDate .roleDate{
   /* Div containing company title and date */
   font-style: italic;
 }
