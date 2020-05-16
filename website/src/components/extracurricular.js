@@ -28,11 +28,11 @@ const Extracurricular = () => {
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="1" class = "accordionBody">
               <div class = "companyAndDate">
-                <p class="companyTitle">Visa</p>
-                <p class="roleDate">Jun - Aug 2019</p>
+                <p class="companyTitle">Ambitia</p>
+                <p class="roleDate">Feb 2019 - Present</p>
               </div>
 
-              <p>Software Engineering Intern</p>
+              <p>Founder</p>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body>Hello! I'm another body</Card.Body>
@@ -42,11 +42,11 @@ const Extracurricular = () => {
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="2" class = "accordionBody">
               <div class = "companyAndDate">
-                <p class="companyTitle">Shearman & Sterling LLP</p>
-                <p class="roleDate">Jul - Jul 2018</p>
+                <p class="companyTitle">Computing and Technology Society</p>
+                <p class="roleDate">May 2018 - May 2019</p>
               </div>
 
-              <p>Knowledge Management Summer Intern</p>
+              <p>Outreach Officer</p>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="2">
               <Card.Body>Hello! I'm another body</Card.Body>
@@ -56,11 +56,11 @@ const Extracurricular = () => {
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="3" class = "accordionBody">
               <div class = "companyAndDate">
-                <p class="companyTitle">BBC</p>
-                <p class="roleDate">Jan - May 2018</p>
+                <p class="companyTitle">Debating Society</p>
+                <p class="roleDate">May 2018 - Feb 2019</p>
               </div>
 
-              <p>Computer Science Mentor (Contract role)</p>
+              <p>Competitions Convenor</p>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="3">
               <Card.Body>Hello! I'm another body</Card.Body>
