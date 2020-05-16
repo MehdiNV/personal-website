@@ -2,10 +2,10 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const AboutImage = ({imageName}) => {
+const BackgroundImage = ({imageName}) => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "devActivity.png" }) {
+      file(relativePath: { eq: "versionControl.png" }) {
         childImageSharp {
           fluid (quality: 100){
             ...GatsbyImageSharpFluid
@@ -21,4 +21,4 @@ const AboutImage = ({imageName}) => {
   />
 }
 
-export default AboutImage
+export default BackgroundImage

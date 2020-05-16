@@ -2,6 +2,7 @@ import React from "react"
 import { FiChevronRight} from "react-icons/fi";
 import SectionLayout from './sectionLayout'
 import './componentsCSS/contentSection.css'
+import Background from './background'
 import About from './about'
 import Experiences from './experiences'
 import Extracurricular from './extracurricular'
@@ -15,6 +16,8 @@ const ContentSection = () => {
 
   return (
     <div>
+      <SectionLayout sectionTitle = "Background" />
+      <Background />
       <SectionLayout sectionTitle = "About" />
       <About />
       <SectionLayout sectionTitle = "Experiences" />

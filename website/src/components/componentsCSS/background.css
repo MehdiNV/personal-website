@@ -1,0 +1,32 @@
+.backgroundSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border: 1px solid black;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+
+.backgroundSection #backgroundContent {
+  flex: 1 1 0%;
+  text-align: center;
+}
+
+.backgroundSection #backgroundImage {
+  flex: 1 1 0%;
+  max-width: 720px;
+  min-width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .backgroundSection {
+    flex-wrap: wrap;
+  }
+  .backgroundSection #backgroundContent {
+    width: 100%;
+    min-width: 100%;
+  }
+}
