@@ -3,7 +3,7 @@ import { FiChevronRight} from "react-icons/fi";
 import SectionLayout from './sectionLayout'
 import './componentsCSS/contentSection.css'
 import Background from './background'
-import About from './about'
+import Skills from './skills'
 import Experiences from './experiences'
 import Extracurricular from './extracurricular'
 import Contact from './contact'
@@ -19,7 +19,7 @@ const ContentSection = () => {
       <SectionLayout sectionTitle = "Background" />
       <Background />
       <SectionLayout sectionTitle = "About" />
-      <About />
+      <Skills />
       <SectionLayout sectionTitle = "Experiences" />
       <Experiences />
       <SectionLayout sectionTitle = "Extracurricular" />

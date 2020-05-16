@@ -1,4 +1,4 @@
-.aboutSection {
+.skillsSection {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,22 +10,22 @@
   padding-right: 0.5vw;
 }
 
-.aboutSection #aboutContent {
+.skillsSection #skillsContent {
   flex: 1 1 0%;
   text-align: center;
 }
 
-.aboutSection #aboutImage {
+.skillsSection #skillsImage {
   flex: 1 1 0%;
   max-width: 720px;
   min-width: 260px;
 }
 
 @media only screen and (max-width: 660px) {
-  .aboutSection {
+  .skillsSection {
     flex-wrap: wrap;
   }
-  .aboutSection #aboutContent {
+  .skillsSection #skillsContent {
     width: 100%;
     min-width: 100%;
   }

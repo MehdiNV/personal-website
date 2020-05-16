@@ -1,7 +1,7 @@
 import React from "react"
 import { FiChevronRight} from "react-icons/fi";
 import SectionLayout from './sectionLayout'
-import './componentsCSS/about.css'
+import './componentsCSS/skills.css'
 import SkillsImage from './skillsImage'
 import Image from 'react-bootstrap/Image'
 import Jumbotron from 'react-bootstrap/Jumbotron'
@@ -12,16 +12,16 @@ import Badge from 'react-bootstrap/Badge'
 // a) A 'About' description (left side)
 // b) Image from undraw (right side)
 
-const About = () => {
+const Skills = () => {
 
   return (
     <>
-        <div class = "aboutSection">
-          <div id = "aboutImage">
+        <div class = "skillsSection">
+          <div id = "skillsImage">
             <SkillsImage />
           </div>
 
-          <div id = "aboutContent">
+          <div id = "skillsContent">
 
             <p>Take a look at my skills below!</p>
 
@@ -67,4 +67,4 @@ const About = () => {
   )
 }
 
-export default About;
+export default Skills;
