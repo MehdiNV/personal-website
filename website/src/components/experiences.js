@@ -1,11 +1,26 @@
-import React from "react"
+import React, { useState } from "react"
 import ExperiencesImage from './experiencesImage'
 import './componentsCSS/experiences.css'
 import Accordion from 'react-bootstrap/Accordion'
 import ListGroup from 'react-bootstrap/ListGroup'
 import Card from 'react-bootstrap/Card'
+import { FiChevronRight} from "react-icons/fi";
+import Button from 'react-bootstrap/Button'
 
 const Experiences = () => {
+  const [isChevronRotated, changeChevronRotation] = useState(false);
+
+  function chevronRotate() {
+    if (isChevronRotated){
+      console.log("change to false");
+      changeChevronRotation(false);
+    }
+    else {
+      console.log("Change to true");
+      changeChevronRotation(true);
+    }
+  }
+
   return (
       <>
         <div class = "experienceSection">
@@ -20,7 +35,9 @@ const Experiences = () => {
                     <p class="roleDate">Sep 2019 - Present</p>
                   </div>
 
-                  <p>Software Engineering Intern</p>
+                  <div class = "roleAndChevron">
+                    <p>Software Engineering Intern</p>
+                  </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
                   <Card.Body>
@@ -36,7 +53,12 @@ const Experiences = () => {
                     <p class="roleDate">Jun - Aug 2019</p>
                   </div>
 
-                  <p>Software Engineering Intern</p>
+                  <div class = "roleAndChevron">
+                    <p>Software Engineering Intern</p>
+                    <Button onClick = {() => chevronRotate()}>
+                      <FiChevronRight id = "chevronIcon" />
+                    </Button>
+                  </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="1">
                   <Card.Body>
@@ -56,7 +78,9 @@ const Experiences = () => {
                     <p class="roleDate">Jul - Jul 2018</p>
                   </div>
 
-                  <p>Knowledge Management Summer Intern</p>
+                  <div class = "roleAndChevron">
+                    <p>Knowledge Management Summer Intern</p>
+                  </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="2">
                   <Card.Body>
@@ -76,7 +100,9 @@ const Experiences = () => {
                     <p class="roleDate">Jan - May 2018</p>
                   </div>
 
-                  <p>Computer Science Mentor (Contract role)</p>
+                  <div class = "roleAndChevron">
+                    <p>Computer Science Mentor (Contract role)</p>
+                  </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="3">
                   <Card.Body>

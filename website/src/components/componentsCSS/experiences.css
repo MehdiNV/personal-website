@@ -86,3 +86,15 @@
   /* Div containing company title and date */
   font-style: italic;
 }
+
+/* CSS for the role title and chevron button */
+#experiencesContent .accordion .roleAndChevron  {
+  /* Creates a flexbow containing the chevron and role title */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#experiencesContent #roleAndChevron {
+  
+}
