@@ -10,6 +10,8 @@ const Experiences = () => {
       <>
         <div class = "experienceSection">
           <div id = "experiencesContent">
+            <p id = "sectionText">Outside of my studies, I have gotten involved with some amazing companies doing awesome work. Take a look at a snapshot of my professional work:</p>
+
             <Accordion>
               <Card >
                 <Accordion.Toggle as={Card.Header} eventKey="0" class = "accordionBody">

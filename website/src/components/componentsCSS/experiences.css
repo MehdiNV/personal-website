@@ -12,7 +12,6 @@
 
 .experienceSection #experiencesContent {
   flex: 1 1 0%;
-  text-align: center;
 }
 
 .experienceSection #experiencesImage {
@@ -29,6 +28,11 @@
     width: 100%;
     min-width: 100%;
   }
+}
+
+/* CSS for p tag */
+#sectionText{
+  margin-left: 0.4rem;
 }
 
 /* CSS Modifications for the Accordion Cards */

@@ -14,6 +14,8 @@ const Extracurricular = () => {
         </div>
 
         <div id="extracurricularContent">
+          <p id = "sectionText">In between my professional and academic efforts, I also regularly get involved in volunteering initiative and extracurricular activities. Take a look at some of them below! </p>
+
           <Accordion>
             <Card >
               <Accordion.Toggle as={Card.Header} eventKey="0" class = "accordionBody">

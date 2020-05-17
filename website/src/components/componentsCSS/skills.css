@@ -48,6 +48,10 @@
   margin-right: 1%;
 }
 
+.skillsSection .skillsDenotion{
+  font-weight: 620;
+}
+
 .skillSegment .badge{
   background-color: #c060a1;
   font-size: 0.85rem;

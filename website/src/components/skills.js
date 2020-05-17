@@ -26,7 +26,7 @@ const Skills = () => {
             <p>Take a look at my technical skills below: 💻</p>
 
             <div class = "skillSegment">
-              <h6>Languages:</h6>
+              <h6 class = "skillsDenotion">Languages:</h6>
               <Badge variant="primary">JavaScript</Badge>
               <Badge variant="primary">Python</Badge>
               <Badge variant="primary">Java</Badge>
@@ -38,7 +38,7 @@ const Skills = () => {
             </div>
 
             <div class = "skillSegment">
-              <h6>Frameworks:</h6>
+              <h6 class = "skillsDenotion">Frameworks:</h6>
               <Badge variant="primary">React</Badge>
               <Badge variant="primary">React Native</Badge>
               <Badge variant="primary">Bootstrap</Badge>
@@ -48,7 +48,7 @@ const Skills = () => {
             </div>
 
             <div class = "skillSegment">
-              <h6>Tools:</h6>
+              <h6 class = "skillsDenotion">Tools:</h6>
               <Badge variant="primary">Git</Badge>
               <Badge variant="primary">Bash</Badge>
               <Badge variant="primary">MongoDB</Badge>

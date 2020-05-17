@@ -9,7 +9,7 @@ const Background = () => {
       <div class="backgroundSection">
 
         <div id="backgroundContent">
-          <h3> Hi there! 👋</h3>
+          <h3> Hey there! 👋</h3>
           <p>I'm Mehdi, a Computer Science undergraduate at Newcastle University. At the moment, I'm
             working as a Software Engineering Intern at WonderBill! </p>
 
@@ -21,6 +21,7 @@ const Background = () => {
           <p id="accolades">Accolades: 🏆</p>
           <p class = "accoladesInfo">• Computer Science, IT and Physics Undergraduate of the Year 2019</p>
           <p class = "accoladesInfo">• Overall Finalist at Hack the Burgh V</p>
+          <p class = "accoladesInfo">• Competitive Debator for Newcastle University</p>
         </div>
 
         <div id="backgroundImage">
