@@ -41,7 +41,6 @@ const Layout = ({ children }) => {
               <RiGatsbyLine />
               <RiReactjsLine />
               <GrGraphQl />
-              <GrHeroku />
               <RiHeartLine />
             </span>
           </h6>

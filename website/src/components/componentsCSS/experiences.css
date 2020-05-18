@@ -93,8 +93,5 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.roleAndChevron .chevronIcon {
-  margin-right: 0.1rem;
+  width: 99.5%;
 }
