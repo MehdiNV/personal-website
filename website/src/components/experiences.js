@@ -21,13 +21,17 @@ const Experiences = () => {
 
     switch (specificedChevronNumber){
       case 1:
-        changeFirstChevron(false);
+        changeFirstChevron(!firstChevron);
+        break;
       case 2:
-        changeSecondChevron(false);
+        changeSecondChevron(!secondChevron);
+        break;
       case 3:
-        changeThirdChevron(false);
+        changeThirdChevron(!thirdChevron);
+        break;
       case 4:
-        changeFourthChevron(false);
+        changeFourthChevron(!fourthChevron);
+        break;
     }
   }
 
