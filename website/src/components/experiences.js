@@ -4,20 +4,30 @@ import './componentsCSS/experiences.css'
 import Accordion from 'react-bootstrap/Accordion'
 import ListGroup from 'react-bootstrap/ListGroup'
 import Card from 'react-bootstrap/Card'
-import { FiChevronRight} from "react-icons/fi";
+import { FiChevronRight, FiChevronDown } from "react-icons/fi";
 import Button from 'react-bootstrap/Button'
 
 const Experiences = () => {
-  const [isChevronRotated, changeChevronRotation] = useState(false);
+  const [firstChevron, changeFirstChevron] = useState(false);
+  const [secondChevron, changeSecondChevron] = useState(true);
+  const [thirdChevron, changeThirdChevron] = useState(true);
+  const [fourthChevron, changeFourthChevron] = useState(true);
 
-  function chevronRotate() {
-    if (isChevronRotated){
-      console.log("change to false");
-      changeChevronRotation(false);
-    }
-    else {
-      console.log("Change to true");
-      changeChevronRotation(true);
+  function changeSpecificChevron(specificedChevronNumber){
+    changeFirstChevron(true);
+    changeSecondChevron(true);
+    changeThirdChevron(true);
+    changeFourthChevron(true);
+
+    switch (specificedChevronNumber){
+      case 1:
+        changeFirstChevron(false);
+      case 2:
+        changeSecondChevron(false);
+      case 3:
+        changeThirdChevron(false);
+      case 4:
+        changeFourthChevron(false);
     }
   }
 
@@ -27,8 +37,8 @@ const Experiences = () => {
           <div id = "experiencesContent">
             <p id = "sectionText">Outside of my studies, I have gotten involved with some amazing companies doing awesome work. Take a look at a snapshot of my professional work:</p>
 
-            <Accordion>
-              <Card >
+            <Accordion defaultActiveKey="0">
+              <Card onClick = {() => changeSpecificChevron(1)}>
                 <Accordion.Toggle as={Card.Header} eventKey="0" class = "accordionBody">
                   <div class = "companyAndDate">
                     <p class="companyTitle">WonderBill</p>
@@ -37,6 +47,9 @@ const Experiences = () => {
 
                   <div class = "roleAndChevron">
                     <p>Software Engineering Intern</p>
+                    <div class = "chevronIcon">
+                      {firstChevron ? <FiChevronRight />: <FiChevronDown />}
+                    </div>
                   </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
@@ -46,7 +59,7 @@ const Experiences = () => {
                 </Accordion.Collapse>
               </Card>
 
-              <Card>
+              <Card onClick = {() => changeSpecificChevron(2)}>
                 <Accordion.Toggle as={Card.Header} eventKey="1" class = "accordionBody">
                   <div class = "companyAndDate">
                     <p class="companyTitle">Visa</p>
@@ -55,9 +68,9 @@ const Experiences = () => {
 
                   <div class = "roleAndChevron">
                     <p>Software Engineering Intern</p>
-                    <Button onClick = {() => chevronRotate()}>
-                      <FiChevronRight id = "chevronIcon" />
-                    </Button>
+                    <div class = "chevronIcon">
+                      {secondChevron ? <FiChevronRight />: <FiChevronDown />}
+                    </div>
                   </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="1">
@@ -71,7 +84,7 @@ const Experiences = () => {
                 </Accordion.Collapse>
               </Card>
 
-              <Card>
+              <Card onClick = {() => changeSpecificChevron(3)}>
                 <Accordion.Toggle as={Card.Header} eventKey="2" class = "accordionBody">
                   <div class = "companyAndDate">
                     <p class="companyTitle">Shearman & Sterling LLP</p>
@@ -80,6 +93,9 @@ const Experiences = () => {
 
                   <div class = "roleAndChevron">
                     <p>Knowledge Management Summer Intern</p>
+                    <div class = "chevronIcon">
+                      {thirdChevron ? <FiChevronRight />: <FiChevronDown />}
+                    </div>
                   </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="2">
@@ -93,7 +109,7 @@ const Experiences = () => {
                 </Accordion.Collapse>
               </Card>
 
-              <Card>
+              <Card onClick = {() => changeSpecificChevron(4)}>
                 <Accordion.Toggle as={Card.Header} eventKey="3" class = "accordionBody">
                   <div class = "companyAndDate">
                     <p class="companyTitle">BBC</p>
@@ -102,6 +118,9 @@ const Experiences = () => {
 
                   <div class = "roleAndChevron">
                     <p>Computer Science Mentor (Contract role)</p>
+                    <div class = "chevronIcon">
+                      {fourthChevron ? <FiChevronRight />: <FiChevronDown />}
+                    </div>
                   </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="3">

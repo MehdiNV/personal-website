@@ -95,6 +95,6 @@
   align-items: center;
 }
 
-#experiencesContent #roleAndChevron {
-  
+.roleAndChevron .chevronIcon {
+  margin-right: 0.1rem;
 }
