@@ -3,11 +3,14 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.8rem 0;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-left: 1vw;
   margin-right: 1vw;
   padding-left: 0.5vw;
   padding-right: 0.5vw;
+
+
+  margin-bottom: 2vh;
 }
 
 .extracurricularSection #extracurricularContent {

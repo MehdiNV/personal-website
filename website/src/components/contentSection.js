@@ -16,15 +16,10 @@ const ContentSection = () => {
 
   return (
     <div>
-      <SectionLayout sectionTitle = "Background" />
       <Background />
-      <SectionLayout sectionTitle = "About" />
       <Skills />
-      <SectionLayout sectionTitle = "Experiences" />
       <Experiences />
-      <SectionLayout sectionTitle = "Extracurricular" />
       <Extracurricular />
-      <SectionLayout sectionTitle = "Contact Me" />
       <Contact />
     </div>
   )
