@@ -7,6 +7,7 @@ import Skills from './skills'
 import Experiences from './experiences'
 import Extracurricular from './extracurricular'
 import Contact from './contact'
+import ProfileHeader from '../components/profileHeader'
 
 // A section should have:
 // Heading (e.g. About)
@@ -16,11 +17,20 @@ const ContentSection = () => {
 
   return (
     <div>
-      <Background />
-      <Skills />
-      <Experiences />
-      <Extracurricular />
-      <Contact />
+      <div>
+        <ProfileHeader />
+        <Background />
+      </div>
+
+      <div>
+        <Skills />
+        <Experiences />
+      </div>
+
+      <div>
+        <Extracurricular />
+        <Contact />
+      </div>
     </div>
   )
 }
