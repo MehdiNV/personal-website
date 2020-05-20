@@ -17,17 +17,17 @@ const ContentSection = () => {
 
   return (
     <div>
-      <div>
+      <div id = "firstPatternSegment">
         <ProfileHeader />
         <Background />
       </div>
 
-      <div>
+      <div id = "secondPatternSegment">
         <Skills />
         <Experiences />
       </div>
 
-      <div>
+      <div id = "thirdPatternSegment">
         <Extracurricular />
         <Contact />
       </div>

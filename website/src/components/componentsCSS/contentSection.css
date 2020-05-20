@@ -21,3 +21,13 @@ p {
   font-weight: 500;
   line-height: 1.2;
 }
+
+#firstPatternSegment {
+  background-image: url("../images/contactImage.png");
+}
+#secondPatternSegment {
+
+}
+#thirdPatternSegment {
+
+}
