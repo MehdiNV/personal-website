@@ -5,14 +5,19 @@ import footerImage from '../images/thirdpatternsvg.svg';
 import styled from 'styled-components';
 
 export const RightBackgroundPattern = styled.div`
-
+  background-image: url(${rightSideImage});
+  background-size: cover;
 
 `;
 
 export const LeftBackgroundPattern = styled.div`
+  background-image: url(${leftSideImage});
+  background-size: cover;
 
 `;
 
-export const footerBackgroundPattern = styled.div`
+export const FooterBackgroundPattern = styled.div`
+  background-image: url(${footerImage});
+  background-size: cover;
 
-`
+`;

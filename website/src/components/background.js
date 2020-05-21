@@ -18,7 +18,7 @@ const Background = () => {
             Outside of programming, I can usually be found fencing,
             teaching or debating.</p>
 
-          <p id="accolades">Accolades: 🏆</p>
+          <p id="accolades">At a glance: 🏆</p>
           <p class = "accoladesInfo">• Computer Science, IT and Physics Undergraduate of the Year 2019</p>
           <p class = "accoladesInfo">• Overall Finalist at Hack the Burgh V</p>
           <p class = "accoladesInfo">• Competitive Debator for Newcastle University</p>

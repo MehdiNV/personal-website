@@ -8,6 +8,7 @@ import Experiences from './experiences'
 import Extracurricular from './extracurricular'
 import Contact from './contact'
 import ProfileHeader from '../components/profileHeader'
+import { RightBackgroundPattern, LeftBackgroundPattern, FooterBackgroundPattern } from './backgroundImagesDivs';
 
 // A section should have:
 // Heading (e.g. About)
@@ -17,20 +18,16 @@ const ContentSection = () => {
 
   return (
     <div>
-      <div id = "firstPatternSegment">
-        <ProfileHeader />
-        <Background />
-      </div>
-
-      <div id = "secondPatternSegment">
-        <Skills />
-        <Experiences />
-      </div>
-
-      <div id = "thirdPatternSegment">
-        <Extracurricular />
-        <Contact />
-      </div>
+      <ProfileHeader />
+      <Background />
+      <hr class="hrStyle" />
+      <Skills />
+      <hr class="hrStyle" />
+      <Experiences />
+      <hr class="hrStyle" />
+      <Extracurricular />
+      <hr class="hrStyle" />
+      <Contact />
     </div>
   )
 }
