@@ -18,16 +18,35 @@ const ContentSection = () => {
 
   return (
     <div>
-      <ProfileHeader />
+
+      <div class = "animate__animated animate__fadeIn">
+        <ProfileHeader />
+      </div>
+
+      <div class = "animate__animated animate__fadeIn animate__delay-1s">
       <Background />
       <hr class="hrStyle" />
-      <Skills />
-      <hr class="hrStyle" />
-      <Experiences />
-      <hr class="hrStyle" />
-      <Extracurricular />
-      <hr class="hrStyle" />
-      <Contact />
+      </div>
+
+      <div class = "animate__animated animate__fadeIn animate__delay-2s">
+        <Skills />
+        <hr class="hrStyle" />
+      </div>
+
+      <div class = "animate__animated animate__fadeIn animate__delay-3s">
+        <Experiences />
+        <hr class="hrStyle" />
+      </div>
+
+      <div class = "animate__animated animate__fadeIn animate__delay-4s">
+        <Extracurricular />
+        <hr class="hrStyle" />
+      </div>
+
+      <div class = "animate__animated animate__fadeIn animate__delay-5s">
+        <Contact />
+      </div>
+
     </div>
   )
 }
