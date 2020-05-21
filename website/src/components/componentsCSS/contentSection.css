@@ -23,7 +23,7 @@ p {
 }
 
 #firstPatternSegment {
-  background-image: url("../images/contactImage.png");
+  background-image: url("./contactImage.png");
 }
 #secondPatternSegment {
 
