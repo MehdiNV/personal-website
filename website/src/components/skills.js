@@ -18,7 +18,9 @@ const Skills = () => {
 
           <div id = "skillsContent">
 
-            <p>Take a look at my technical skills below: 💻</p>
+            <p>Take a look at my technical skills below:
+              <span role = "img" aria-label="Computer emoji">💻</span>
+            </p>
 
             <div class = "skillSegment">
               <h6 class = "skillsDenotion">Languages:</h6>
