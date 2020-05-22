@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
         class = "body"
       >
         <main>{children}</main>
-        <footer>
+        <footer class="animate__animated animate__fadeIn animate__delay-5s">
           <h6 id = "footerName">Designed & Developed by Mehdi Naderi Varandi</h6>
           <h6> © {new Date().getFullYear()}. Made with
             <span>
