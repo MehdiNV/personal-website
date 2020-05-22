@@ -2,10 +2,8 @@ import React, { useState } from "react"
 import ExperiencesImage from './experiencesImage'
 import './componentsCSS/experiences.css'
 import Accordion from 'react-bootstrap/Accordion'
-import ListGroup from 'react-bootstrap/ListGroup'
 import Card from 'react-bootstrap/Card'
 import { FiChevronRight, FiChevronDown } from "react-icons/fi";
-import Button from 'react-bootstrap/Button'
 
 const Experiences = () => {
   const [firstChevron, changeFirstChevron] = useState(false);
@@ -32,6 +30,8 @@ const Experiences = () => {
       case 4:
         changeFourthChevron(!fourthChevron);
         break;
+      default:
+        throw new Error("Unexpected chevron value received")
     }
   }
 
