@@ -1,8 +1,4 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Container from 'react-bootstrap/Container'
 import { FiGithub,  FiLinkedin, FiMail} from "react-icons/fi";
 import './componentsCSS/profileHeader.css'
 import HeadshotImage from './headshotImage'
