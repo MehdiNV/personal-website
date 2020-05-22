@@ -1,11 +1,6 @@
 import React from "react"
-import { FiChevronRight} from "react-icons/fi";
-import SectionLayout from './sectionLayout'
 import './componentsCSS/skills.css'
 import SkillsImage from './skillsImage'
-import Image from 'react-bootstrap/Image'
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Container from 'react-bootstrap/Container'
 import Badge from 'react-bootstrap/Badge'
 
 // About Section should have:
