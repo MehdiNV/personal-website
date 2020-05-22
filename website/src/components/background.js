@@ -9,7 +9,9 @@ const Background = () => {
       <div class="backgroundSection">
 
         <div id="backgroundContent">
-          <h3> Hey there! 👋</h3>
+          <h3> Hey there!
+            <span role = "img" aria-label="Handwave emoji">👋</span>
+          </h3>
           <p>I'm Mehdi, a Computer Science undergraduate at Newcastle University. At the moment, I'm
             working as a Software Engineering Intern at WonderBill! </p>
 
@@ -18,7 +20,9 @@ const Background = () => {
             Outside of programming, I can usually be found fencing,
             teaching or debating.</p>
 
-          <p id="accolades">At a glance: 🏆</p>
+          <p id="accolades">At a glance:
+            <span role = "img" aria-label="Trophy emoji">🏆</span>
+          </p>
           <p class = "accoladesInfo">• Computer Science, IT and Physics Undergraduate of the Year 2019</p>
           <p class = "accoladesInfo">• Overall Finalist at Hack the Burgh V</p>
           <p class = "accoladesInfo">• Competitive Debator for Newcastle University</p>
