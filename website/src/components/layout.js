@@ -7,24 +7,12 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
 import "./componentsCSS/layout.css"
 
 import { RiGatsbyLine, RiReactjsLine, RiHeartLine } from "react-icons/ri";
-import { GrGraphQl, GrHeroku } from "react-icons/gr";
+import { GrGraphQl } from "react-icons/gr";
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <>

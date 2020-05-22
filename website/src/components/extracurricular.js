@@ -30,6 +30,8 @@ const Extracurricular = () => {
       case 4:
         changeFourthChevron(!fourthChevron);
         break;
+      default:
+        throw new Error("Unexpected chevron value received")
     }
   }
 

@@ -1,7 +1,5 @@
 import React from "react"
 import './componentsCSS/contact.css'
-import Accordion from 'react-bootstrap/Accordion'
-import Card from 'react-bootstrap/Card'
 import ContactImage from './contactImage'
 import { FiGithub,  FiLinkedin, FiMail} from "react-icons/fi";
 
