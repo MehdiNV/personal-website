@@ -17,7 +17,7 @@ const ProfileHeader = () => {
             <hr class="hrStyle" />
 
             <h2 id = "nameHeader">Mehdi Naderi Varandi</h2>
-            <h3 id = "subtitleHeader">Software Engineering Intern @ WonderBill </h3>
+            <h3 id = "subtitleHeader">Computer Science, IT & Physics Undergraduate of the Year 2019 </h3>
             <a href="https://www.linkedin.com/in/mehdinv/" class="hvr-underline-from-left" target="_blank" rel="noopener noreferrer">
               <FiLinkedin class = "icons" />
             </a>
