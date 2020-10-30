@@ -46,7 +46,7 @@ const Experiences = () => {
                 <Accordion.Toggle as={Card.Header} eventKey="0" class = "accordionBody">
                   <div class = "companyAndDate">
                     <p class="companyTitle">WonderBill</p>
-                    <p class="roleDate">Sep 2019 - Present</p>
+                    <p class="roleDate">Sep 2019 - Aug 2020</p>
                   </div>
 
                   <div class = "roleAndChevron">
@@ -58,7 +58,8 @@ const Experiences = () => {
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
                   <Card.Body>
-                    <p>• Maintaining and refactoring Selenium-based web scrapers as part of a wider initiative with the Project Management team</p>
+                    <p>• Built a feature to monitor the progress of linking accounts, improving the experience of ~100K users on iOS/Android</p>
+                    <p>• Deployed web scraper fixes across 20+ utility providers, resolving 7400+ errors (Tech: JS, React, React Native, Redux)</p>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
