@@ -12,10 +12,7 @@ const Background = () => {
           <h3> Hey there!
             <span role = "img" aria-label="Handwave emoji">👋</span>
           </h3>
-          <p>I'm Mehdi, a Computer Science undergraduate at Newcastle University. At the moment, I'm
-            working as a Software Engineering Intern at WonderBill! </p>
-
-          <p>I'm passionate about Technology in all its aspects, whether it be designing innovative
+          <p>I'm Mehdi, a Computer Science undergraduate at Newcastle University. I'm passionate about Technology in all its aspects, whether it be designing innovative
             solutions or managing teams of Computer Science mentors in order to teach CS in the local community and inspire the next generation of coders.
             Outside of programming, I can usually be found fencing,
             teaching or debating.</p>
