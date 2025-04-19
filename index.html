@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Quinn</title>
+  <title>Mehdi Naderi Varandi</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
     <div class="logo">
-      <a href="index.html">Quinn</a>
+      <a href="index.html">MNV</a>
     </div>
     <nav class="nav" id="navMenu">
       <a href="selectworks.html">Select Works</a>
@@ -28,7 +28,7 @@
           <h1>Mehdi Naderi Varandi</h1>
           <div class="hero-copy">
             <p><strong>mehdinv@hotmail.com</strong></p>
-            <p>Software Engineer at Spotify</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet nulla sed risus volutpat fermentum. Sed suscipit elementum dolor vitae condimentum. Morbi vitae nulla sagittis, pellentesque velit hendrerit, lobortis ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ultrices sed erat vitae pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris a est lorem. Mauris non purus condimentum, porta ligula vel, vulputate lorem. In eleifend ultricies volutpat. Nullam suscipit iaculis purus, id porttitor sapien pellentesque nec. Vivamus ac felis tristique, egestas arcu vel, congue leo. Proin augue lacus, venenatis eu posuere mattis, laoreet sit amet erat. Fusce diam urna, molestie eget maximus eu, porttitor vel metus. Proin gravida, enim sit amet elementum pharetra, nibh ex convallis massa, ut consectetur magna quam quis sapien. Sed eget pretium turpis, at mollis lacus. Maecenas et felis malesuada, tempus purus varius, fermentum eros.</p>
           </div>
         </div>
         <figure class="hero-image">
@@ -37,61 +37,98 @@
       </div>
     </section>
 
-    <!-- Select Works Grid -->
+    <!-- Select Works Carousel -->
     <section class="select-works">
       <h2>Select Works</h2>
-      <div class="works-grid">
-        <div class="work-item">
-          <figure class="work-image">
-            <img src="https://picsum.photos/400/400?random=2" alt="Work 1 placeholder">
-          </figure>
-          <p class="work-title">203 Issue</p>
-          <p class="work-subtitle">
-            SQSP Magazine<br>
-            Editorial Styling<br>
-            Street Photography
-          </p>
-        </div>
-        <div class="work-item">
-          <figure class="work-image">
-            <img src="https://picsum.photos/400/400?random=3" alt="Work 2 placeholder">
-          </figure>
-          <p class="work-title">Commercial Folio</p>
-          <p class="work-subtitle">
-            Luxury Brands<br>
-            Creative Consulting
-          </p>
-        </div>
-        <div class="work-item">
-          <figure class="work-image">
-            <img src="https://picsum.photos/400/400?random=4" alt="Work 3 placeholder">
-          </figure>
-          <p class="work-title">Street Series</p>
-          <p class="work-subtitle">
-            Transit Photography<br>
-            Coffee Table Book
-          </p>
-        </div>
-        <div class="work-item">
-          <figure class="work-image">
-            <img src="https://picsum.photos/400/400?random=5" alt="Work 4 placeholder">
-          </figure>
-          <p class="work-title">SQSP Launch</p>
-          <p class="work-subtitle">
-            Editorial Styling<br>
-            Event Direction
-          </p>
+      <div class="carousel">
+        <div class="carousel-track">
+          <!-- original items -->
+          <div class="work-item">
+            <figure class="work-image">
+              <img src="https://picsum.photos/400/400?random=2" alt="Work 1 placeholder">
+            </figure>
+            <p class="work-title">203 Issue</p>
+            <p class="work-subtitle">
+              SQSP Magazine<br>
+              Editorial Styling<br>
+              Street Photography
+            </p>
+          </div>
+          <div class="work-item">
+            <figure class="work-image">
+              <img src="https://picsum.photos/400/400?random=3" alt="Work 2 placeholder">
+            </figure>
+            <p class="work-title">Commercial Folio</p>
+            <p class="work-subtitle">
+              Luxury Brands<br>
+              Creative Consulting
+            </p>
+          </div>
+          <div class="work-item">
+            <figure class="work-image">
+              <img src="https://picsum.photos/400/400?random=4" alt="Work 3 placeholder">
+            </figure>
+            <p class="work-title">Street Series</p>
+            <p class="work-subtitle">
+              Transit Photography<br>
+              Coffee Table Book
+            </p>
+          </div>
+          <div class="work-item">
+            <figure class="work-image">
+              <img src="https://picsum.photos/400/400?random=5" alt="Work 4 placeholder">
+            </figure>
+            <p class="work-title">SQSP Launch</p>
+            <p class="work-subtitle">
+              Editorial Styling<br>
+              Event Direction
+            </p>
+          </div>
+
+          <!-- duplicate items for seamless loop -->
+          <div class="work-item">
+            <figure class="work-image">
+              <img src="https://picsum.photos/400/400?random=2" alt="Work 1 placeholder">
+            </figure>
+            <p class="work-title">203 Issue</p>
+            <p class="work-subtitle">
+              SQSP Magazine<br>
+              Editorial Styling<br>
+              Street Photography
+            </p>
+          </div>
+          <div class="work-item">
+            <figure class="work-image">
+              <img src="https://picsum.photos/400/400?random=3" alt="Work 2 placeholder">
+            </figure>
+            <p class="work-title">Commercial Folio</p>
+            <p class="work-subtitle">
+              Luxury Brands<br>
+              Creative Consulting
+            </p>
+          </div>
+          <div class="work-item">
+            <figure class="work-image">
+              <img src="https://picsum.photos/400/400?random=4" alt="Work 3 placeholder">
+            </figure>
+            <p class="work-title">Street Series</p>
+            <p class="work-subtitle">
+              Transit Photography<br>
+              Coffee Table Book
+            </p>
+          </div>
+          <div class="work-item">
+            <figure class="work-image">
+              <img src="https://picsum.photos/400/400?random=5" alt="Work 4 placeholder">
+            </figure>
+            <p class="work-title">SQSP Launch</p>
+            <p class="work-subtitle">
+              Editorial Styling<br>
+              Event Direction
+            </p>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Latest Project -->
-    <section class="latest-project">
-      <h2>Latest Project</h2>
-      <figure class="latest-image">
-        <img src="https://picsum.photos/1200/600?random=6" alt="Latest project placeholder">
-      </figure>
-      <p>Transit street photography,<br>Launching early next year</p>
     </section>
   </main>
 
