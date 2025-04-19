@@ -105,7 +105,7 @@ a {
   height: auto;
 }
 
-/* Select Works (original grid styles, kept for fallback) */
+/* Select Works Section */
 .select-works {
   margin-bottom: 4rem;
 }
@@ -115,69 +115,51 @@ a {
   margin-bottom: 1.5rem;
 }
 
-.works-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-.work-item {
-  text-align: center;
-}
-
-.work-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.work-title {
-  font-weight: 600;
-  margin-top: 0.75rem;
-}
-
-.work-subtitle {
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 0.25rem;
-  line-height: 1.4;
-}
-
-/* Carousel override for Select Works */
+/* Carousel wrapper hides overflow */
 .select-works .carousel {
   overflow: hidden;
   position: relative;
 }
 
+/* Track is exactly 2× the width of one full set of slides */
 .select-works .carousel-track {
   display: flex;
-  width: calc(200% + 1rem);
+  width: calc((240px + 1rem) * 4 * 2); /* (slide width + gap) × slide count × 2 */
   animation: scroll-carousel 25s linear infinite;
 }
 
+/* Each slide: fixed width + right gap */
 .select-works .carousel-track .work-item {
-  flex: 0 0 240px;    /* fixed slide width */
+  flex: 0 0 240px; /* fixed slide width */
   margin-right: 1rem;
+  text-align: center;
 }
 
+/* Square image container with overflow cropping */
 .select-works .carousel-track .work-item .work-image {
   width: 100%;
-  aspect-ratio: 1/1;  /* square box */
-  overflow: hidden;   /* crop overflow */
+  aspect-ratio: 1/1;
+  overflow: hidden;
 }
 
 .select-works .carousel-track .work-item .work-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;  /* fill & crop dynamically */
+  object-fit: cover;
   display: block;
 }
 
+/* Animate exactly one set’s worth of slides */
 @keyframes scroll-carousel {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-1 * (240px + 1rem) * 4));
+  }
 }
 
+/* Pause animation on hover */
 .select-works .carousel:hover .carousel-track {
   animation-play-state: paused;
 }
@@ -238,5 +220,18 @@ a {
   }
   .hero-copy {
     margin-right: 0;
+  }
+
+  /* Collapse carousel to grid on mobile */
+  .select-works .carousel,
+  .select-works .carousel-track {
+    display: block;
+    width: 100%;
+    animation: none;
+  }
+  .select-works .carousel-track .work-item {
+    flex: none;
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
