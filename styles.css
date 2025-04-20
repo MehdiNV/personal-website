@@ -89,6 +89,41 @@ a {
   height: auto;
 }
 
+/* Hero buttons: centered & spaced */
+.hero-buttons {
+  display: flex;
+  justify-content: center;  /* center the buttons */
+  gap: 1.5rem;              /* increased gap */
+  margin-top: 1.5rem;
+}
+
+.hero-buttons .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;            /* square container */
+  height: 3rem;
+  padding: 0;             /* no extra space */
+  gap: 0;                 /* no gap since there’s no text */
+  background: transparent;/* hollow */
+  border: 2px solid #111; /* black border */
+  color: #111;            /* icon inherits this */
+  border-radius: 0.5rem;
+}
+
+.hero-buttons .btn svg {
+  width: 1.5rem;  /* adjust icon size as desired */
+  height: 1.5rem;
+  fill: currentColor;
+}
+
+/* Remove any previous background‐color overrides */
+.hero-buttons .email-btn,
+.hero-buttons .linkedin-btn {
+  background: transparent;
+}
+
+
 /* Select Works Section */
 .select-works {
   margin-bottom: 4rem;
