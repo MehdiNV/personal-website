@@ -68,6 +68,12 @@ a {
   line-height: 1.4;
 }
 
+.hero-copy li {
+  font-size: 1.125rem; /* ~18px, adjust as needed */
+  line-height: 1.4;
+  margin-left: 10px;
+}
+
 
 .hero-copy {
   margin-top: 0.5rem;
