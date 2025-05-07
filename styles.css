@@ -22,7 +22,7 @@ body {
   line-height: 1.5;
   background: #eee9ea;
   color: #111;
-  padding: 1rem;
+  padding: 0rem;
 }
 
 a {
@@ -34,8 +34,9 @@ a {
 .hero {
   position: relative;
   overflow: visible;
-  margin-bottom: 4rem;
+  padding-left: 1rem;
 }
+
 .hero-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -46,8 +47,9 @@ a {
   padding: 1.5rem;
   z-index: 3;
 }
+
 .hero-text h1 {
-  font-size: clamp(4rem, 10vw, 8rem);
+  font-size: clamp(2rem, 8vw, 6rem);
   line-height: 0.9;
   margin: 0;
   text-transform: uppercase;
@@ -126,7 +128,7 @@ a {
 /* Footer */
 .site-footer {
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
   font-size: 0.9rem;
   color: #777;
 }
