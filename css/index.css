@@ -46,6 +46,12 @@ a {
   transition: all 0.3s ease;
 }
 
+.site-header:hover {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
 .site-header.shrink {
   padding: 0.4rem 2rem;
   background: rgba(255, 255, 255, 0.7);
