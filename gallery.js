@@ -28,3 +28,20 @@ document.addEventListener('DOMContentLoaded', () => {
     shuffled.forEach(el => container.appendChild(el));
   }
 });
+
+let lastScrollY = window.scrollY;
+const header = document.querySelector('.site-header');
+
+window.addEventListener('scroll', () => {
+  const currentScrollY = window.scrollY;
+
+  if (currentScrollY > lastScrollY && currentScrollY > 60) {
+    // scrolling down
+    header.classList.add('hidden');
+  } else {
+    // scrolling up
+    header.classList.remove('hidden');
+  }
+
+  lastScrollY = currentScrollY;
+});
