@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Modal logic
+  // Modal-specific logic
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img');
 
