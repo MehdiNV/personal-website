@@ -103,6 +103,22 @@ function loadPhotos() {
     });
 }
 
+// Scroll-to-top button behavior
+const scrollBtn = document.getElementById('scrollToTop');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 500) {
+    scrollBtn.classList.remove('hidden');
+  } else {
+    scrollBtn.classList.add('hidden');
+  }
+});
+
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
 // Modal close
 modal.addEventListener('click', e => {
   if (e.target === modal) {
