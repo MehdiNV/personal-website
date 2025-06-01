@@ -62,7 +62,9 @@ function loadPhotos() {
 
       photos.forEach(photo => {
         const fig = document.createElement('figure');
+        const delay = newItems.length * 300; // 300ms per tile
         fig.className = 'gallery-item';
+        fig.style.setProperty('--fade-delay', `${delay}ms`);
         fig.innerHTML = `
           <img src="${photo.url}" alt="${photo.title}" loading="lazy">
           <figcaption>${photo.title}</figcaption>
