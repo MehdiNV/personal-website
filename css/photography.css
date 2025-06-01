@@ -108,14 +108,13 @@ a {
 }
 
 .gallery-item {
-  margin-bottom: 16px;
-  border: 1px solid black;
   float: left;
-  position: absolute;
+  margin-bottom: 16px;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 0.6s ease forwards;
-  width: calc(33.333% - 10.666px);
+  border: 1px solid black;
+  box-sizing: border-box;
 }
 
 .gallery-item img {

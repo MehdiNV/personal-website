@@ -20,6 +20,24 @@ const msnry = new Masonry(container, {
 });
 console.log('Masonry initialized:', msnry);
 
+function calculateColumnWidth() {
+  const containerWidth = container.clientWidth;
+  const desiredColumnWidth = 400; // You can change this
+  const gutter = 16;
+
+  const columns = Math.floor(containerWidth / (desiredColumnWidth + gutter));
+  const columnWidthPercent = 100 / columns;
+
+  const itemWidth = `calc(${columnWidthPercent}% - ${(gutter * (columns - 1)) / columns}px)`;
+
+  const items = container.querySelectorAll('.gallery-item, .grid-sizer');
+  items.forEach(el => {
+    el.style.width = itemWidth;
+  });
+
+  msnry.layout();
+}
+
 function loadPhotos() {
   if (loading) return;
   loading = true;
@@ -66,6 +84,7 @@ function loadPhotos() {
 
       // Wait for all new images to load before triggering Masonry layout
       imagesLoaded(container, () => {
+        calculateColumnWidth();
         msnry.appended(newItems);
         msnry.layout();
       });
@@ -105,6 +124,12 @@ const observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(sentinel);
+
+// Calculate sizing
+window.addEventListener('resize', () => {
+  calculateColumnWidth();
+});
+
 
 // Load initial batch
 loadPhotos();
