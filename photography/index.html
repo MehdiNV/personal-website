@@ -18,16 +18,19 @@
   <main>
     <section class="photo-gallery">
       <h2 id="photoGalleryHeader">Photography</h2>
-      <div class="masonry" id="masonry"></div>
+      <div class="masonry" id="masonry">
+        <div class="grid-sizer"></div>
+      </div>
       <div id="loader">Loading more photos...</div>
     </section>
   </main>
 
-  <!-- Modal overlay to utilise for pictures -->
   <div id="modal" class="modal hidden">
     <img id="modal-img" src="" alt="">
   </div>
 
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script type="module" src="../javascript/script.js"></script>
 </body>
 </html>
