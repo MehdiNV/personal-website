@@ -19,7 +19,9 @@ body {
   line-height: 1.5;
   background: #eee9ea;
   color: #111;
-  padding: 0.8rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-bottom: 0.8rem;
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
 }
@@ -31,11 +33,10 @@ a {
 
 /* ------ Header / Navigation ----------------------------------------------- */
 .site-header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -44,18 +45,19 @@ a {
   justify-content: flex-end;
   align-items: center;
   transition: all 0.3s ease;
-}
-
-.site-header.shrink {
-  padding: 0.4rem 2rem;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 
 .site-header:hover {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(2px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.site-header.shrink {
+  padding: 0.4rem 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
 }
 
 .site-header.hidden {
@@ -88,7 +90,7 @@ a {
 
 /* ===== Masonry Photo Gallery ===== */
 .photo-gallery {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .photo-gallery h2 {
@@ -129,9 +131,9 @@ a {
   0% {
     opacity: 0;
     transform: translateY(20px);
-    visibility: visible; /* 👈 Makes it visible only when animation starts */
+    visibility: visible;
   }
-  
+
   100% {
     opacity: 1;
     transform: translateY(0);
