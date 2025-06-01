@@ -19,8 +19,6 @@ body {
   line-height: 1.5;
   background: #eee9ea;
   color: #111;
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
   padding-bottom: 0.8rem;
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
@@ -89,6 +87,11 @@ a {
 /* ---------------------------------------------------------------------------*/
 
 /* ===== Masonry Photo Gallery ===== */
+main {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
 .photo-gallery {
   margin-top: 1rem;
 }
@@ -125,6 +128,7 @@ a {
   width: 100%;
   height: auto;
   display: block;
+  max-width: 100%;
 }
 
 @keyframes fadeIn {

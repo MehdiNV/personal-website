@@ -86,15 +86,23 @@ function loadPhotos() {
 
       // Wait for all new images to load before triggering Masonry layout
       imagesLoaded(container, () => {
-        calculateColumnWidth();
-        msnry.appended(newItems);
-        msnry.layout();
+        requestAnimationFrame(() => {
+          calculateColumnWidth();
+          msnry.appended(newItems);
+          msnry.layout();
+
+          // Fallback second layout to catch any stragglers
+          setTimeout(() => {
+            msnry.layout();
+          }, 150);
+        });
       });
 
       page++;
       hasLoadedOnce = true;
       loading = false;
       loader.style.display = 'none';
+      msnry.layout();
     })
     .catch(err => {
       console.error('Failed to load photos:', err);
@@ -147,7 +155,6 @@ observer.observe(sentinel);
 window.addEventListener('resize', () => {
   calculateColumnWidth();
 });
-
 
 // Load initial batch
 loadPhotos();
