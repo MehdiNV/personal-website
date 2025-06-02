@@ -8,7 +8,6 @@ const client = createClient({
   apiVersion: '2023-12-01'
 });
 
-// You can store a custom doc in Sanity to track the last shuffle date
 const SHUFFLE_TRACKER_ID = 'shuffle-tracker';
 
 export async function handler() {
@@ -33,7 +32,7 @@ export async function handler() {
       }
     }));
 
-    // Track the date we did this
+    // Track the date we shuffled the dataset
     mutations.push({
       patch: {
         id: SHUFFLE_TRACKER_ID,
