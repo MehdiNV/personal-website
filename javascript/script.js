@@ -46,7 +46,7 @@ function loadPhotos() {
   const start = page * pageSize;
   const end = start + pageSize;
 
-  const query = client.fetch(`*[_type == "photo"] | order(_createdAt desc) [${start}...${end}] {
+  const query = client.fetch(`*[_type == "photo"] | order(sortOrder asc) [${start}...${end}] {
     title,
     "url": image.asset->url
   }`);
