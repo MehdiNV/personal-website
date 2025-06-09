@@ -21,8 +21,10 @@ const msnry = new Masonry(container, {
 console.log('Masonry initialized:', msnry);
 
 function calculateColumnWidth() {
+  console.log("Calculating column width to determine best tiling arrangement...");
+
   const containerWidth = container.clientWidth;
-  const desiredColumnWidth = 400; // You can change this
+  const desiredColumnWidth = 400; // Determinable amount for each column width
   const gutter = 16;
 
   const columns = Math.floor(containerWidth / (desiredColumnWidth + gutter));
@@ -34,8 +36,6 @@ function calculateColumnWidth() {
   items.forEach(el => {
     el.style.width = itemWidth;
   });
-
-  msnry.layout();
 }
 
 function loadPhotos() {
@@ -57,7 +57,7 @@ function loadPhotos() {
 
   Promise.all([query, delay])
     .then(([photos]) => {
-      console.log('Photos are loading in...', photos);
+      console.log('New photos are loading in...', photos);
       const newItems = [];
 
       photos.forEach(photo => {
@@ -81,7 +81,6 @@ function loadPhotos() {
 
         container.appendChild(fig);
         newItems.push(fig);
-        console.log('Appended to DOM: ', fig);
       });
 
       // Wait for all new images to load before triggering Masonry layout
@@ -94,7 +93,7 @@ function loadPhotos() {
           // Fallback second layout to catch any stragglers
           setTimeout(() => {
             msnry.layout();
-          }, 150);
+          }, 100);
         });
       });
 
@@ -126,8 +125,7 @@ scrollBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-
-// Modal close
+// Handle the Modal closing - make sure it dissapears if we click outside
 modal.addEventListener('click', e => {
   if (e.target === modal) {
     modal.classList.add('hidden');
@@ -153,6 +151,8 @@ observer.observe(sentinel);
 
 // Calculate sizing
 window.addEventListener('resize', () => {
+  console.log("Window was resized, re-calculating column width...");
+
   calculateColumnWidth();
 });
 
