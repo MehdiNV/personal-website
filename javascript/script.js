@@ -74,6 +74,9 @@ function loadPhotos() {
 
         // Modal event
         img.addEventListener('click', () => {
+          const scrollTop = window.scrollY;
+          modal.style.top = `${scrollTop}px`; // Position modal based on scroll
+
           modal.classList.remove('hidden');
           modalImg.src = photo.url;
           modalImg.alt = photo.title;
@@ -131,6 +134,7 @@ modal.addEventListener('click', e => {
     modal.classList.add('hidden');
     modalImg.src = '';
     modalImg.alt = '';
+    modal.style.top = '0'; // reset
   }
 });
 
