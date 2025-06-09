@@ -1,3 +1,4 @@
+/* Overall page-wide CSS styling -------------------------------------------- */
 html {
   margin: 0;
   padding: 0;
@@ -28,6 +29,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+/* -------------------------------------------------------------------------- */
 
 /* ------ Header / Navigation ----------------------------------------------- */
 .site-header {
@@ -84,9 +86,9 @@ a {
 #currentActiveNavButton {
   font-weight: 600;
 }
-/* ---------------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------- */
 
-/* ===== Masonry Photo Gallery ===== */
+/* ----- Masonry Photo Gallery ---------------------------------------------- */
 main {
   padding-left: 0.8rem;
   padding-right: 0.8rem;
@@ -166,9 +168,10 @@ main {
 .gallery-item:hover figcaption {
   opacity: 1;
 }
-/* ---------------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------- */
 
 
+/* -------------------------------------------------------------------------- */
 .scroll-top {
   position: fixed;
   bottom: 2rem;
@@ -193,6 +196,7 @@ main {
 .scroll-top.hidden {
   display: none;
 }
+/* -------------------------------------------------------------------------- */
 
 
 /* Loading spinner -----------------------------------------------------------*/
@@ -205,11 +209,12 @@ main {
 }
 /* ---------------------------------------------------------------------------*/
 
-
-/* ===== Modal for Fullscreen Image ===== */
+/* ----- Modal for Fullscreen Image ----------------------------------------- */
 .modal {
   position: absolute;
-  top: 0; /* will be dynamically set in JS */
+  top: 0; /* Dynamically adjusted via JS, so that it's always positioned... */
+  /* ...where the user is currently looking (along the vertical... */
+  /* ...axis of the page */
   left: 0;
   width: 100%;
   height: 100vh;
