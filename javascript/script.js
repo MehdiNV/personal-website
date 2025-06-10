@@ -1,5 +1,20 @@
 import { client } from './sanityClient.js'
 
+// Logic necessary for logging and debugging...
+function getTimestamp() {
+  const now = new Date();
+  const pad = n => n.toString().padStart(2, '0');
+
+  const day = pad(now.getDate());
+  const month = pad(now.getMonth() + 1);
+  const year = now.getFullYear().toString().slice(-2);
+  const hours = pad(now.getHours());
+  const minutes = pad(now.getMinutes());
+  const seconds = pad(now.getSeconds());
+
+  return `[${day}/${month}/${year} ${hours}:${minutes}:${seconds}]:`;
+}
+
 const container = document.getElementById('masonry');
 const modal = document.getElementById('modal');
 const modalImg = document.getElementById('modal-img');
@@ -18,10 +33,10 @@ const msnry = new Masonry(container, {
   percentPosition: true,
   transitionDuration: '0.3s'
 });
-console.log('Masonry initialized:', msnry);
+console.log(`${getTimestamp()} Masonry initialized:`, msnry);
 
 function calculateColumnWidth() {
-  console.log("Calculating column width to determine best tiling arrangement...");
+  console.log(`${getTimestamp()} Calculating column width to determine best tiling arrangement...`);
 
   const containerWidth = container.clientWidth;
   const desiredColumnWidth = 400; // Determinable amount for each column width
@@ -57,7 +72,7 @@ function loadPhotos() {
 
   Promise.all([query, delay])
     .then(([photos]) => {
-      console.log('New photos are loading in...', photos);
+      console.log(`${getTimestamp()} photos are loading in...`, photos);
       const newItems = [];
 
       photos.forEach(photo => {
@@ -90,9 +105,9 @@ function loadPhotos() {
       // Wait for all new images to load before triggering Masonry layout
       imagesLoaded(container, () => {
         requestAnimationFrame(() => {
-          console.log(`${Date.now()}: Calculating column widths now that images have loaded in...`);
+          console.log(`${getTimestamp()} Calculating column widths now that images have loaded in...`);
           calculateColumnWidth();
-          console.log("Finished processing column widths");
+          console.log(`${getTimestamp()} Finished processing column widths`);
 
           msnry.appended(newItems);
           msnry.layout();
@@ -115,7 +130,7 @@ function loadPhotos() {
       msnry.layout();
     })
     .catch(err => {
-      console.error('Failed to load photos:', err);
+      console.error(`${getTimestamp()} Failed to load photos: `, err);
       loading = false;
       loader.style.display = 'none';
     });
@@ -142,7 +157,7 @@ modal.addEventListener('click', e => {
     modal.classList.add('hidden');
     modalImg.src = '';
     modalImg.alt = '';
-    modal.style.top = '0'; // reset
+    modal.style.top = '0'; // Reset location of overlay
   }
 });
 
@@ -163,9 +178,9 @@ observer.observe(sentinel);
 
 // Calculate sizing
 window.addEventListener('resize', () => {
-  console.log("Window was resized, re-calculating column width...");
+  console.log(`${getTimestamp()} Window was resized, re-calculating column width...`);
   calculateColumnWidth();
-  console.log("Finishing calculating column widths");
+  console.log(`${getTimestamp()} Finishing calculating column widths`);
 });
 
 // Load initial batch
