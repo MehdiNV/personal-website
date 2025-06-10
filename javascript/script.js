@@ -3,7 +3,7 @@ import { client } from './sanityClient.js'
 // Logic necessary for logging and debugging...
 function getTimestamp() {
   const now = new Date();
-  const pad = n => n.toString().padStart(2, '0');
+  const pad = (n, len = 2) => n.toString().padStart(len, '0');
 
   const day = pad(now.getDate());
   const month = pad(now.getMonth() + 1);
@@ -11,8 +11,9 @@ function getTimestamp() {
   const hours = pad(now.getHours());
   const minutes = pad(now.getMinutes());
   const seconds = pad(now.getSeconds());
+  const millis = pad(now.getMilliseconds(), 3);
 
-  return `[${day}/${month}/${year} ${hours}:${minutes}:${seconds}]:`;
+  return `[${day}/${month}/${year} ${hours}:${minutes}:${seconds}.${millis}]:`;
 }
 
 const container = document.getElementById('masonry');
