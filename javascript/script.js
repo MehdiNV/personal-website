@@ -63,7 +63,7 @@ function loadPhotos() {
       photos.forEach(photo => {
         const fig = document.createElement('figure');
         const delay = newItems.length * 300; // 300ms per tile
-        fig.className = 'gallery-item';
+        fig.className = 'gallery-item loading';
         fig.style.setProperty('--fade-delay', `${delay}ms`);
         fig.innerHTML = `
           <img src="${photo.url}" alt="${photo.title}" loading="lazy">
@@ -82,6 +82,7 @@ function loadPhotos() {
           modalImg.alt = photo.title;
         });
 
+
         container.appendChild(fig);
         newItems.push(fig);
       });
@@ -89,9 +90,16 @@ function loadPhotos() {
       // Wait for all new images to load before triggering Masonry layout
       imagesLoaded(container, () => {
         requestAnimationFrame(() => {
+          console.log(`${Date.now()}: Calculating column widths now that images have loaded in...`);
           calculateColumnWidth();
+          console.log("Finished processing column widths");
+
           msnry.appended(newItems);
           msnry.layout();
+
+          newItems.forEach(item => {
+            item.classList.remove('loading');
+          });
 
           // Fallback second layout to catch any stragglers
           setTimeout(() => {
@@ -156,8 +164,8 @@ observer.observe(sentinel);
 // Calculate sizing
 window.addEventListener('resize', () => {
   console.log("Window was resized, re-calculating column width...");
-
   calculateColumnWidth();
+  console.log("Finishing calculating column widths");
 });
 
 // Load initial batch
