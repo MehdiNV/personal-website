@@ -1,6 +1,6 @@
 import { client } from './sanityClient.js'
 
-// Logic necessary for logging and debugging...
+// Utility necessary for logging and debugging...
 function getTimestamp() {
   const now = new Date();
   const pad = (n, len = 2) => n.toString().padStart(len, '0');

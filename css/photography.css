@@ -1,35 +1,3 @@
-/* Overall page-wide CSS styling -------------------------------------------- */
-html {
-  margin: 0;
-  padding: 0;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.5;
-  background: #eee9ea;
-  color: #111;
-  padding-bottom: 0.8rem;
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-/* -------------------------------------------------------------------------- */
 
 /* ------ Header / Navigation ----------------------------------------------- */
 .site-header {
@@ -46,45 +14,6 @@ a {
   align-items: center;
   transition: all 0.3s ease;
   z-index: 1000;
-}
-
-.site-header:hover {
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(2px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-.site-header.shrink {
-  padding: 0.4rem 2rem;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-}
-
-.site-header.hidden {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
-.nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.nav a {
-  font-weight: 500;
-  font-size: 1rem;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-  transition: background 0.2s ease;
-}
-
-.nav a:hover {
-  background: rgba(0, 0, 0, 0.05);
-}
-
-#currentActiveNavButton {
-  font-weight: 600;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -132,12 +61,6 @@ main {
   display: block;
   max-width: 100%;
 }
-
-.gallery-item.loading {
-  opacity: 0;
-  visibility: hidden;
-}
-
 
 @keyframes fadeIn {
   0% {
