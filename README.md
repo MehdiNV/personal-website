@@ -9,3 +9,6 @@ Architecture:
 
 For local testing, use:
 `python3 -m http.server 8080`
+
+For adding new pictures, navigate to the studio folder and run:
+`npx sanity dev` or `sanity dev`
