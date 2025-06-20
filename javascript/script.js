@@ -115,6 +115,8 @@ function loadPhotos() {
           newItems.forEach(item => {
             item.classList.remove('loading');
           });
+          
+          msnry.layout();
 
           // Fallback second layout to catch any stragglers
           setTimeout(() => {
