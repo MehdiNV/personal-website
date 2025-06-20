@@ -34,7 +34,6 @@ const msnry = new Masonry(container, {
   percentPosition: true,
   transitionDuration: '0.3s'
 });
-console.log(`${getTimestamp()} Masonry initialized:`, msnry);
 
 function calculateColumnWidth() {
   console.log(`${getTimestamp()} Calculating column width to determine best tiling arrangement...`);
@@ -120,7 +119,7 @@ function loadPhotos() {
           // Fallback second layout to catch any stragglers
           setTimeout(() => {
             msnry.layout();
-          }, 100);
+          }, 50);
         });
       });
 
@@ -184,5 +183,6 @@ window.addEventListener('resize', () => {
   console.log(`${getTimestamp()} Finishing calculating column widths`);
 });
 
-// Load initial batch
+// Load the intiial batch
+console.log(`${getTimestamp()} Initialising masonry layout...`);
 loadPhotos();
