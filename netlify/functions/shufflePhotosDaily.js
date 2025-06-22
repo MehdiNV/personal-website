@@ -1,5 +1,21 @@
 import { createClient } from '@sanity/client';
 
+// Utility necessary for logging and debugging...
+function getTimestamp() {
+  const now = new Date();
+  const pad = (n, len = 2) => n.toString().padStart(len, '0');
+
+  const day = pad(now.getDate());
+  const month = pad(now.getMonth() + 1);
+  const year = now.getFullYear().toString().slice(-2);
+  const hours = pad(now.getHours());
+  const minutes = pad(now.getMinutes());
+  const seconds = pad(now.getSeconds());
+  const millis = pad(now.getMilliseconds(), 3);
+
+  return `[${day}/${month}/${year} ${hours}:${minutes}:${seconds}.${millis}]:`;
+}
+
 const client = createClient({
   projectId: 'e63aw6jk',
   dataset: 'production',
@@ -17,6 +33,8 @@ export async function handler() {
     const today = new Date().toISOString().slice(0, 10); // e.g. "2025-05-31"
 
     if (tracker?.lastRun === today) {
+      console.log(`${getTimestamp()} Already shuffled today - skipping as a result...`);
+
       return {
         statusCode: 200,
         body: JSON.stringify({ skipped: true, reason: 'Already shuffled today' })
@@ -31,6 +49,8 @@ export async function handler() {
         set: { sortOrder: Math.random() }
       }
     }));
+
+    console.log(`${getTimestamp()} Mutating dataset by shuffling it around...`);
 
     // Track the date we shuffled the dataset
     mutations.push({
