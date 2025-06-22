@@ -72,7 +72,7 @@ function loadPhotos() {
 
   Promise.all([query, delay])
     .then(([photos]) => {
-      console.log(`${getTimestamp()} photos are loading in...`, photos);
+      console.log(`${getTimestamp()} Photos are loading in...`, photos);
       const newItems = [];
 
       photos.forEach(photo => {
@@ -115,7 +115,7 @@ function loadPhotos() {
           newItems.forEach(item => {
             item.classList.remove('loading');
           });
-          
+
           msnry.layout();
 
           // Fallback second layout to catch any stragglers
