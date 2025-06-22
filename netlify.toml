@@ -1,9 +1,8 @@
 [build]
-  publish = "dist"
-  command = "npm run build"
+  publish = "." #
 
 [functions]
   directory = "netlify/functions"
 
 [functions.shufflePhotosDaily]
-  schedule = "0 6 * * *" # Every day at 6am UTC
+  schedule = "0 6 * * *" # Run every day at 6:00 AM UTC
