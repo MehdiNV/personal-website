@@ -42,10 +42,14 @@ function calculateColumnWidth() {
   const desiredColumnWidth = 400; // Determinable amount for each column width
   const gutter = 16;
 
-  const columns = Math.floor(containerWidth / (desiredColumnWidth + gutter));
-  const columnWidthPercent = 100 / columns;
+  let columns = Math.floor(containerWidth / (desiredColumnWidth + gutter));
+  if (columns < 1) columns = 1; // If Columns is calculated to be 0, then hard-reset it to 1
 
+  const columnWidthPercent = 100 / columns;
   const itemWidth = `calc(${columnWidthPercent}% - ${(gutter * (columns - 1)) / columns}px)`;
+
+  console.log(`${getTimestamp()} Calculated number of columns ideally to be ${columns};
+    containerWidth is ${containerWidth}, desiredColumnWidth is ${desiredColumnWidth} and gutter is ${gutter}...`);
 
   const items = container.querySelectorAll('.gallery-item, .grid-sizer');
   items.forEach(el => {
