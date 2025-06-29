@@ -202,4 +202,6 @@ window.addEventListener('load', () => {
   console.log(`${getTimestamp()} Window fully loaded, initialising masonry layout...`);
   calculateColumnWidth();
   loadPhotos();
+  
+  document.getElementById('masonry').style.visibility = 'visible';
 });
