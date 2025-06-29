@@ -42,6 +42,12 @@ function calculateColumnWidth() {
   const desiredColumnWidth = 400; // Determinable amount for each column width
   const gutter = 16;
 
+  // Safe-guard against small transiest glitches caused by rapid DOM changes
+  if (containerWidth < (desiredColumnWidth + gutter)) {
+    console.log(`${getTimestamp()} Container width too small (${containerWidth}px), skipping recalculation to avoid flicker.`);
+    return;
+  }
+
   let columns = Math.floor(containerWidth / (desiredColumnWidth + gutter));
   if (columns < 1) columns = 1; // If Columns is calculated to be 0, then hard-reset it to 1
 
@@ -182,13 +188,18 @@ const observer = new IntersectionObserver(entries => {
 
 observer.observe(sentinel);
 
-// Calculate sizing
-window.addEventListener('resize', () => {
-  console.log(`${getTimestamp()} Window was resized, re-calculating column width...`);
-  calculateColumnWidth();
-  console.log(`${getTimestamp()} Finishing calculating column widths`);
-});
+// Calculate sizing for optimal arrangement w/ regards to Masonry
+function debounce(func, wait) {
+  let timeout;
+  return (...args) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+}
 
-// Load the intiial batch
-console.log(`${getTimestamp()} Initialising masonry layout...`);
-loadPhotos();
+// Load the intiial batch on the first initial load of the page
+window.addEventListener('load', () => {
+  console.log(`${getTimestamp()} Window fully loaded, initialising masonry layout...`);
+  calculateColumnWidth();
+  loadPhotos();
+});
