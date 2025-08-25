@@ -195,6 +195,7 @@ a {
 @media (max-width: 900px) {
   body {
     padding-right: 1rem;
+    padding-bottom: 1rem;
   }
 
   .hero {
